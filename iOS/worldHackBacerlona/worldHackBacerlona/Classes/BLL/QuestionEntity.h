@@ -10,4 +10,8 @@
 
 @interface QuestionEntity : NSObject
 
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, assign) NSUInteger correctAnswerIndex;
+@property (nonatomic, retain) NSArray *answers;
+
 @end
