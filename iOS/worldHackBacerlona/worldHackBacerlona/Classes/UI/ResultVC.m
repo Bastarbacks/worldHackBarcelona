@@ -61,4 +61,10 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+#pragma mark - facebook
+-(IBAction)pushFb:(id)sender{
+
+}
+
+
 @end
