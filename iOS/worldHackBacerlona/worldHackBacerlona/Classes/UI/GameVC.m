@@ -154,7 +154,7 @@
     step++;
     
     if(step>totalSteps){
-        ResultVC *vc = [[ResultVC alloc]initWithNibName:@"ResultVC" bundle:nil];
+        ResultVC *vc = [[ResultVC alloc]initWithNibName:@"ResultVC" bundle:nil andWins:wins andLose:lose andTotal:totalSteps];
         [self.navigationController pushViewController:vc animated:YES];
         [vc release];
     }else{
