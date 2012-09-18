@@ -33,6 +33,11 @@
     return self;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"[SongInfo] %@ - %@ (%@)", self.artist, self.title, self.album];
+}
+
 #pragma mark - Memory Management
 
 - (void)dealloc

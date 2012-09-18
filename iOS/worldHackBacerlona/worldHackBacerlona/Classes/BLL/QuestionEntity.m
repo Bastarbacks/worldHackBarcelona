@@ -42,6 +42,11 @@
     return nil;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"[Question] %@ (correctAnswer: %d) \n%@", self.title, self.correctAnswerIndex, self.answers];
+}
+
 #pragma mark - Memory Management
 
 - (void)dealloc
