@@ -9,6 +9,7 @@
 #import "GameService.h"
 #import "QuestionEntity.h"
 #import "AnswerEntity.h"
+#import "SongInfoEntity.h"
 
 #import "AFJSONRequestOperation.h"
 
@@ -67,9 +68,22 @@
                     [answers addObject:answer];
                     [answer release];
                 }
+                
+                SongInfoEntity *songInfo = nil;
+                
+                if ([tmpQuestion objectForKey:@"songInfo"])
+                {
+                    songInfo = [[[SongInfoEntity alloc] initWithTitle:[tmpQuestion valueForKey:@"title"]
+                                                               album:[tmpQuestion valueForKey:@"album"]
+                                                              artist:[tmpQuestion valueForKey:@"artist"]
+                                                               cover:[tmpQuestion valueForKey:@"cover"]
+                                                             preview:[tmpQuestion valueForKey:@"preview"]] autorelease];
+                }
+                
                 QuestionEntity *question = [[QuestionEntity alloc] initWithTitle:title
                                                                          answers:answers
-                                                                   correctAnswer:correctAnswer];
+                                                                   correctAnswer:correctAnswer
+                                                                        songInfo:songInfo];
                 [array addObject:question];
                 [question release];
             }
