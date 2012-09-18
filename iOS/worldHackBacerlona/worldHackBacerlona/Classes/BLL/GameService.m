@@ -75,6 +75,11 @@
                                                               artist:[tmpQuestion valueForKey:@"artist"]
                                                                cover:[tmpQuestion valueForKey:@"cover"]
                                                              preview:[tmpQuestion valueForKey:@"preview"]] autorelease];
+                    
+                    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
+                    dispatch_async(queue, ^{
+                        [self getDeezerPreviewForSongInfo:songInfo];
+                    });
                 }
                 
                 QuestionEntity *question = [[QuestionEntity alloc] initWithTitle:title
@@ -120,8 +125,6 @@
 }
 
 + (void)getDeezerPreviewForSongInfo:(SongInfoEntity *)songInfo
-                            success:(SuccessCallback)success
-                              error:(ErrorCallback)error
 {
     if (songInfo == nil)
     {
@@ -142,10 +145,7 @@
             {
                 NSURL *url = [NSURL URLWithString:[[arraySongs objectAtIndex:0] objectForKey:@"preview"]];
                 
-                if (success != NULL)
-                {
-                    success(url);
-                }
+                songInfo.deezerSong = url;
             }
         }
         

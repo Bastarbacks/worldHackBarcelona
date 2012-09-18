@@ -15,6 +15,8 @@
 @property (nonatomic, retain) NSString *cover;
 @property (nonatomic, retain) NSString *preview;
 
+@property (nonatomic, retain) NSURL *deezerSong;
+
 - (id)initWithTitle:(NSString *)title
               album:(NSString *)album
              artist:(NSString *)artist

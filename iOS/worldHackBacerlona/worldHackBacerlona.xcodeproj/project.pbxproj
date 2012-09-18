@@ -36,6 +36,7 @@
 		361B637316089F7E00D6A88D /* ResultVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361B637116089F7E00D6A88D /* ResultVC.xib */; };
 		361B637616089FB900D6A88D /* GameService.m in Sources */ = {isa = PBXBuildFile; fileRef = 361B637516089FB900D6A88D /* GameService.m */; };
 		362A00D91608C7E00004F9AC /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 362A00D81608C7E00004F9AC /* JSONKit.m */; };
+		362A03101608D00E0004F9AC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362A030F1608D00E0004F9AC /* AVFoundation.framework */; };
 		CD89957C1608A1B00024C6A9 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD89957A1608A1B00024C6A9 /* WelcomeViewController.m */; };
 		CD89957D1608A1B00024C6A9 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD89957B1608A1B00024C6A9 /* WelcomeViewController.xib */; };
 		CD8995911608A4B10024C6A9 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8995841608A4B10024C6A9 /* Facebook.m */; };
@@ -117,6 +118,7 @@
 		361B637516089FB900D6A88D /* GameService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameService.m; path = Classes/BLL/GameService.m; sourceTree = "<group>"; };
 		362A00D71608C7E00004F9AC /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		362A00D81608C7E00004F9AC /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		362A030F1608D00E0004F9AC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CD8995791608A1B00024C6A9 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeViewController.h; path = Classes/UI/WelcomeVC/WelcomeViewController.h; sourceTree = "<group>"; };
 		CD89957A1608A1B00024C6A9 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeViewController.m; path = Classes/UI/WelcomeVC/WelcomeViewController.m; sourceTree = "<group>"; };
 		CD89957B1608A1B00024C6A9 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WelcomeViewController.xib; path = Classes/UI/WelcomeVC/WelcomeViewController.xib; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362A03101608D00E0004F9AC /* AVFoundation.framework in Frameworks */,
 				361B6347160898BC00D6A88D /* UIKit.framework in Frameworks */,
 				361B6349160898BC00D6A88D /* Foundation.framework in Frameworks */,
 				361B634B160898BC00D6A88D /* CoreGraphics.framework in Frameworks */,
@@ -206,6 +209,7 @@
 		361B6337160898BC00D6A88D = {
 			isa = PBXGroup;
 			children = (
+				362A030F1608D00E0004F9AC /* AVFoundation.framework */,
 				361B634E160898BC00D6A88D /* worldHackBacerlona */,
 				361B6345160898BC00D6A88D /* Frameworks */,
 				361B6343160898BC00D6A88D /* Products */,
