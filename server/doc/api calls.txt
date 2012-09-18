@@ -1,1 +1,9 @@
 api calls
+==========
+
+hackworkd_url="http://gossip.fegabe.es:6699"
+hackworkd_url="http://50.17.254.203:6699"
+
+test_token='AAAFk6jZAg8FYBAIVehSSy2tDbKuieUa1sURQypZBTgPa0xOEQVwZAsxegOfJB7kTJkZAuneZAIerJX2MzWHZBlZBZA2DLKADZBVDTZCfNAyJZBUloFeHWg7bLIS'
+
+curl "$hackworkd_url/play?access_token=$test_token"

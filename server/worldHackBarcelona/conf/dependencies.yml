@@ -4,5 +4,5 @@ require:
     - play 1.2.4
     - play -> crud
     - play -> secure
-#    - play -> fbgraph 0.4:
-#        transitive: false
+    - play -> fbgraph 0.4:
+        transitive: false
