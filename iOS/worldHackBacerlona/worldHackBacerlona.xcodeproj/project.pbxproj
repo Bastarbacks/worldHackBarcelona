@@ -49,6 +49,8 @@
 		CD8995AE1608A5290024C6A9 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8995A51608A5290024C6A9 /* SBJsonBase.m */; };
 		CD8995AF1608A5290024C6A9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8995A71608A5290024C6A9 /* SBJsonParser.m */; };
 		CD8995B01608A5290024C6A9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8995A91608A5290024C6A9 /* SBJsonWriter.m */; };
+		CD8995D41608B8BE0024C6A9 /* QuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8995D31608B8BE0024C6A9 /* QuestionCell.m */; };
+		CD8995D61608B8D50024C6A9 /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8995D51608B8D50024C6A9 /* QuestionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +144,9 @@
 		CD8995A71608A5290024C6A9 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		CD8995A81608A5290024C6A9 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		CD8995A91608A5290024C6A9 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		CD8995D21608B8BE0024C6A9 /* QuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionCell.h; path = Classes/UI/Cells/QuestionCell.h; sourceTree = "<group>"; };
+		CD8995D31608B8BE0024C6A9 /* QuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionCell.m; path = Classes/UI/Cells/QuestionCell.m; sourceTree = "<group>"; };
+		CD8995D51608B8D50024C6A9 /* QuestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionCell.xib; path = Classes/UI/Cells/QuestionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +263,7 @@
 		361B636316089F0900D6A88D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CD8995D11608B8970024C6A9 /* Cells */,
 				CD8995781608A18D0024C6A9 /* WelcomeVC */,
 				361B636516089F3E00D6A88D /* LoginVC.h */,
 				361B636616089F3E00D6A88D /* LoginVC.m */,
@@ -366,6 +372,16 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		CD8995D11608B8970024C6A9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CD8995D21608B8BE0024C6A9 /* QuestionCell.h */,
+				CD8995D31608B8BE0024C6A9 /* QuestionCell.m */,
+				CD8995D51608B8D50024C6A9 /* QuestionCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -439,6 +455,7 @@
 				361B637316089F7E00D6A88D /* ResultVC.xib in Resources */,
 				CD89957D1608A1B00024C6A9 /* WelcomeViewController.xib in Resources */,
 				CD8995921608A4B10024C6A9 /* FBDialog.bundle in Resources */,
+				CD8995D61608B8D50024C6A9 /* QuestionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +498,7 @@
 				360F5D181608AF500044F43B /* QuestionEntity.m in Sources */,
 				360F5D1B1608AF5E0044F43B /* AnswerEntity.m in Sources */,
 				360F5D321608B7F70044F43B /* SongInfoEntity.m in Sources */,
+				CD8995D41608B8BE0024C6A9 /* QuestionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

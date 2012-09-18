@@ -7,6 +7,7 @@
 //
 
 #import "GameVC.h"
+#import "QuestionCell.h"
 
 @interface GameVC ()
 
@@ -81,23 +82,31 @@
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
 
     static NSString *CellIdentifier = @"QuestionCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
+
+    QuestionCell *cell = (QuestionCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
-    
+		
+		NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"QuestionCell" owner:self options:nil];
+		
+		for (id currentObject in topLevelObjects){
+			if ([currentObject isKindOfClass:[UITableViewCell class]]){
+				cell =  (QuestionCell *) currentObject;
+				break;
+			}
+		}
+	}
     
     switch (indexPath.section) {
         case 0:
-            cell.textLabel.text = @"Question?????????????????????????";
+            cell.textViewQuestion.text = @"Questionasdasdasdasdasdasdasdas dasdasdasd as sdf dfas fdsdasdasdasda sdasd ?????????????????????????";
             break;
         case 1:
-            cell.textLabel.text = [NSString stringWithFormat:@"Answer %i",indexPath.row];
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.textViewQuestion.text = [NSString stringWithFormat:@"Answer %i",indexPath.row];
+            
+            cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 
             break;
         default:
@@ -111,22 +120,58 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    
+}
+
+-(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+
     step++;
     self.title = [NSString stringWithFormat:@"Step %i/10",step];
-
     
     [self.myTableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
     [self.myTableView reloadData];
-    
+
 }
 
-- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
-	[self tableView:tableView didSelectRowAtIndexPath:indexPath];
-}
-
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    return 120;
+//- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+//	[self tableView:tableView didSelectRowAtIndexPath:indexPath];
 //}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *CellIdentifier = @"QuestionCell";
+	
+    QuestionCell *cell = (QuestionCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+		
+		NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"QuestionCell" owner:self options:nil];
+		
+		for (id currentObject in topLevelObjects){
+			if ([currentObject isKindOfClass:[UITableViewCell class]]){
+				cell =  (QuestionCell *) currentObject;
+				break;
+			}
+		}
+	}
+    
+    switch (indexPath.section) {
+        case 0:
+            cell.textViewQuestion.text = @"Questionasdasdasdasdasdasdasdas dasdasdasd as sdf dfas fdsdasdasdasda sdasd ?????????????????????????";
+            break;
+        case 1:
+            cell.textViewQuestion.text = [NSString stringWithFormat:@"Answer %i",indexPath.row];
+            
+            break;
+        default:
+            break;
+    }
+    
+    CGRect frame = cell.textViewQuestion.frame;
+    frame.size.height = cell.textViewQuestion.contentSize.height;
+    cell.textViewQuestion.frame = frame;
+    
+    
+    return 30+cell.textViewQuestion.frame.size.height;
+}
 
 
 @end
