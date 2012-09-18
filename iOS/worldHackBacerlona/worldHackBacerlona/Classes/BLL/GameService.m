@@ -167,9 +167,8 @@
 
 - (NSString *)accessToken
 {
-    return @"AAAFk6jZAg8FYBAGm16ZBZAn5NpiJOzp1x1wpfB7aw7YcNlPocDJLeNO4Rv814xbtiKZAvTgKyORADwZAFKLz43xvS45P798kpb2yxNplwxVMaGcLK2pMT";
-//    NSString *accessToken = [appDelegate facebook].accessToken;
-//    return accessToken;
+    NSString *accessToken = [appDelegate facebook].accessToken;
+    return accessToken;
 }
 
 + (NSArray*)questions{

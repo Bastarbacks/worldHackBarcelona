@@ -10,8 +10,6 @@
 #import "WelcomeViewController.h"
 #import "LoginVC.h"
 
-#import <AVFoundation/AVFoundation.h>
-
 @implementation AppDelegate
 
 - (void)dealloc
@@ -311,12 +309,53 @@
     [defaults synchronize];
 }
 
-+ (void)playSound:(NSURL *)url
+- (void)playSound:(NSURL *)url
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        AVPlayer *player = [AVPlayer playerWithURL:url];
-        [player play];
+        NSError *setCategoryError = nil;
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:&setCategoryError];
+        
+        // Create audio player with background music
+        NSString *backgroundMusicPath = [[NSBundle mainBundle] pathForResource:@"SplashScreen" ofType:@"wav"];
+        NSURL *backgroundMusicURL = [NSURL fileURLWithPath:backgroundMusicPath];
+        NSError *error;
+        _backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:&error];
+        [_backgroundMusicPlayer setDelegate:self];  // We need this so we can restart after interruptions
+        [_backgroundMusicPlayer setNumberOfLoops:-1];
     });
+}
+
+#pragma mark -
+#pragma mark AVAudioPlayer delegate methods
+
+- (void) audioPlayerBeginInterruption: (AVAudioPlayer *) player {
+    _backgroundMusicInterrupted = YES;
+    _backgroundMusicPlaying = NO;
+}
+
+- (void) audioPlayerEndInterruption: (AVAudioPlayer *) player {
+    if (_backgroundMusicInterrupted) {
+        [self tryPlayMusic];
+        _backgroundMusicInterrupted = NO;
+    }
+}
+
+- (void)tryPlayMusic {
+    
+    // Check to see if iPod music is already playing
+    UInt32 propertySize = sizeof(_otherMusicIsPlaying);
+    AudioSessionGetProperty(kAudioSessionProperty_OtherAudioIsPlaying, &propertySize, &_otherMusicIsPlaying);
+    
+    // Play the music if no other music is playing and we aren't playing already
+    if (_otherMusicIsPlaying != 1 && !_backgroundMusicPlaying) {
+        [_backgroundMusicPlayer prepareToPlay];
+        if (soundsEnabled==YES) {
+            [_backgroundMusicPlayer play];
+            _backgroundMusicPlaying = YES;
+            
+            
+        }
+    }   
 }
 
 @end

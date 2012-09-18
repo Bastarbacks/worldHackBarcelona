@@ -9,10 +9,19 @@
 #import <UIKit/UIKit.h>
 #import "Facebook.h"
 
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
+
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate,FBSessionDelegate,FBRequestDelegate,FBDialogDelegate>{
 
     Facebook                    *facebook;
     id                          detailDelegate;
+    
+    AVAudioPlayer *_backgroundMusicPlayer;
+    BOOL _backgroundMusicPlaying;
+    BOOL _backgroundMusicInterrupted;
+    UInt32 _otherMusicIsPlaying;
 }
 @property (nonatomic, retain) id                       detailDelegate;
 
