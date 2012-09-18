@@ -85,6 +85,10 @@
 
 #pragma mark - Private Methods
 
+- (NSString *)accessToken
+{
+    return [NSString stringWithFormat:@"hola"];
+}
 
 
 @end
