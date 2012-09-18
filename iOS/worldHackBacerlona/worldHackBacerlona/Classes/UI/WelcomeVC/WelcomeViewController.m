@@ -29,6 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:254.0f/255 green:191.0f/255 blue:16.0f/255 alpha:.9f]];
+
     AppDelegate *delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
     UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(makeLogout:)];

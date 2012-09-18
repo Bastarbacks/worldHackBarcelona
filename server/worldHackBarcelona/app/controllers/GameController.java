@@ -2,7 +2,6 @@ package controllers;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -134,8 +133,7 @@ public class GameController extends Controller {
 
         int numberOfGameTests = 4;
 
-        long seed = new Date().getTime();
-        Random rnd = new Random(seed);
+        Random rnd = new Random();
 
         int gameTest = rnd.nextInt(numberOfGameTests);
 
