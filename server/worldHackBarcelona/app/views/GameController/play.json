@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "title": "de qué artista es la canción Baba O'Riley?",
+            "correctAnswer": 0,
+            "answers": [
+                {
+                    "answer": "The Who"
+                },
+                {
+                    "answer": "Estopa"
+                },
+                {
+                    "answer": "Madonna"
+                },
+                {
+                    "answer": "David Bowie"
+                }
+            ],
+            "songInfo": {
+                "title": "Baba O'Riley",
+                "artist": "The Who",
+                "album": "Who's Next",
+                "cover": "http://api.deezer.com/2.0/album/217934/image",
+                "preview": "http://cdn-preview-b.deezer.com/stream/bb0a2c4c855e34ad8114266d3c23b57b-0.mp3"
+            }
+        },
+        {
+            "title": "de quién es el álbum  A Day at the Races?",
+            "correctAnswer": 0,
+            "answers": [
+                {
+                    "answer": "Queen"
+                },
+                {
+                    "answer": "Estopa"
+                },
+                {
+                    "answer": "Madonna"
+                },
+                {
+                    "answer": "David Bowie"
+                }
+            ],
+            "songInfo": {
+                "title": "Tie Your Mother Down",
+                "artist": "Queen",
+                "album": "A Day at the Races",
+                "cover": "http://api.deezer.com/2.0/album/917233/image",
+                "preview": "http://cdn-preview-4.deezer.com/stream/444fb61ec5b48a498e351d7c3690a62c-0.mp3"
+            }
+        }
+    ]
+}
