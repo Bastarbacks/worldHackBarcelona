@@ -70,11 +70,11 @@
                 
                 if ([tmpQuestion objectForKey:@"songInfo"])
                 {
-                    songInfo = [[[SongInfoEntity alloc] initWithTitle:[tmpQuestion valueForKey:@"title"]
-                                                               album:[tmpQuestion valueForKey:@"album"]
-                                                              artist:[tmpQuestion valueForKey:@"artist"]
-                                                               cover:[tmpQuestion valueForKey:@"cover"]
-                                                             preview:[tmpQuestion valueForKey:@"preview"]] autorelease];
+                    songInfo = [[[SongInfoEntity alloc] initWithTitle:[[tmpQuestion objectForKey:@"songInfo"] valueForKey:@"title"]
+                                                               album:[[tmpQuestion objectForKey:@"songInfo"] valueForKey:@"album"]
+                                                              artist:[[tmpQuestion objectForKey:@"songInfo"] valueForKey:@"artist"]
+                                                               cover:[[tmpQuestion objectForKey:@"songInfo"] valueForKey:@"cover"]
+                                                             preview:[[tmpQuestion objectForKey:@"songInfo"] valueForKey:@"preview"]] autorelease];
                     
                     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
                     dispatch_async(queue, ^{
