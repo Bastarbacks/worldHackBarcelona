@@ -45,7 +45,8 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{79, 13}, {182, 60}}</string>
 								<reference key="NSSuperview" ref="957357651"/>
-								<reference key="NSNextKeyView" ref="582729369"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="261799319"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">1</int>
@@ -70,12 +71,12 @@
 									<int key="NSfFlags">16</int>
 								</object>
 							</object>
-							<object class="IBUIButton" id="582729369">
+							<object class="IBUIButton" id="261799319">
 								<reference key="NSNextResponder" ref="957357651"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{11, 13}, {60, 60}}</string>
+								<string key="NSFrame">{{11, 5}, {60, 60}}</string>
 								<reference key="NSSuperview" ref="957357651"/>
-								<reference key="NSNextKeyView"/>
+								<reference key="NSWindow"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -110,6 +111,7 @@
 						</array>
 						<string key="NSFrameSize">{300, 84}</string>
 						<reference key="NSSuperview" ref="415700638"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="912499656"/>
 						<string key="NSReuseIdentifierKey">_NS:11</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
@@ -125,6 +127,7 @@
 				</array>
 				<string key="NSFrameSize">{300, 85}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="957357651"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -146,14 +149,14 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">playButton</string>
 						<reference key="source" ref="415700638"/>
-						<reference key="destination" ref="582729369"/>
+						<reference key="destination" ref="261799319"/>
 					</object>
 					<int key="connectionID">11</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">playButtonPressed:</string>
-						<reference key="source" ref="582729369"/>
+						<reference key="source" ref="261799319"/>
 						<reference key="destination" ref="415700638"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -184,7 +187,7 @@
 						<reference key="object" ref="415700638"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="912499656"/>
-							<reference ref="582729369"/>
+							<reference ref="261799319"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -195,7 +198,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">10</int>
-						<reference key="object" ref="582729369"/>
+						<reference key="object" ref="261799319"/>
 						<reference key="parent" ref="415700638"/>
 					</object>
 				</array>
@@ -215,7 +218,43 @@
 			<nil key="sourceID"/>
 			<int key="maxID">12</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">QuestionCell</string>
+					<string key="superclassName">UITableViewCell</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">playButtonPressed:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">playButtonPressed:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">playButtonPressed:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="playButton">UIButton</string>
+						<string key="textViewQuestion">UITextView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="playButton">
+							<string key="name">playButton</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="textViewQuestion">
+							<string key="name">textViewQuestion</string>
+							<string key="candidateClassName">UITextView</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/QuestionCell.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">

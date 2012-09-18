@@ -8,8 +8,6 @@
 
 #import "QuestionCell.h"
 
-#import <AudioToolbox/AudioToolbox.h>
-
 @implementation QuestionCell
 @synthesize playButton;
 @synthesize textViewQuestion;
@@ -40,9 +38,7 @@
 
 - (IBAction)playButtonPressed:(id)sender
 {
-    SystemSoundID soundID;
-    
-    AudioServicesCreateSystemSoundID((CFURLRef)self.songInfo.deezerSong, &soundID);
-    AudioServicesPlaySystemSound (soundID);
+    [AppDelegate playSound:self.songInfo.deezerSong];
 }
+
 @end

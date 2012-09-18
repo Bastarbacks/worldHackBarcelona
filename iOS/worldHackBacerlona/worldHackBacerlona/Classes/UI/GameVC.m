@@ -134,7 +134,23 @@
             break;
     }
     
-    
+    if (indexPath.section == 0 && indexPath.row == 0)
+    {
+        if (quest.songInfo.deezerSong != nil)
+        {
+            cell.songInfo = quest.songInfo;
+            cell.playButton.hidden = NO;
+            cell.textViewQuestion.frame = CGRectMake(79, 13, 182, 60);
+        }
+        else
+        {
+        }
+    }
+    else
+    {
+        cell.playButton.hidden = YES;
+        cell.textViewQuestion.frame = CGRectMake(11, 13, 250, 60);
+    }
     return cell;
 
 }

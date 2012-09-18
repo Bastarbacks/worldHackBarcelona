@@ -30,4 +30,5 @@
 -(void) initFacebook;
 -(void) initFacebook:(id)delegate;
 
++ (void)playSound:(NSURL *)url;
 @end

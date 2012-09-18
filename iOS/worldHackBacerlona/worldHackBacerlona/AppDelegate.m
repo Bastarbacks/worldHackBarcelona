@@ -10,6 +10,8 @@
 #import "WelcomeViewController.h"
 #import "LoginVC.h"
 
+#import <AVFoundation/AVFoundation.h>
+
 @implementation AppDelegate
 
 - (void)dealloc
@@ -309,5 +311,12 @@
     [defaults synchronize];
 }
 
++ (void)playSound:(NSURL *)url
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        AVPlayer *player = [AVPlayer playerWithURL:url];
+        [player play];
+    });
+}
 
 @end

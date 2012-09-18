@@ -128,8 +128,8 @@
     {
         return;
     }
-    NSString *query = @"manel+benvolgut";
-    //NSString *query = [NSString stringWithFormat:@"%@+%@", songInfo.title, songInfo.artist];
+    
+    NSString *query = [NSString stringWithFormat:@"%@+%@", songInfo.title, songInfo.artist];
     NSDictionary *parameters = [NSDictionary dictionaryWithObject:query forKey:@"q"];
     NSMutableURLRequest *request = [[self instance].deezer requestWithMethod:@"GET" path:@"search/track" parameters:parameters];
     
