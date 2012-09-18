@@ -13,3 +13,8 @@
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
 #endif
+
+#import "GameService.h"
+
+#import "AppDelegate.h"
+#define appDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])

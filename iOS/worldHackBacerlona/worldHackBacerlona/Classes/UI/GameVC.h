@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GameVC : UIViewController
+@interface GameVC : UIViewController<UITableViewDelegate,UITableViewDataSource>{
+    UITableView     *myTableView;
+    NSMutableArray  *list;
+    
+    int             step;
+}
+
+@property (nonatomic, retain) IBOutlet UITableView      *myTableView;
+@property (nonatomic, retain) NSMutableArray            *list;
+
+@property (nonatomic, assign) int                       step;
 
 @end
