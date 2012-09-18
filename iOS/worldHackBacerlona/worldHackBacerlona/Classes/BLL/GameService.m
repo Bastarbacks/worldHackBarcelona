@@ -79,7 +79,7 @@
             {
                 @try
                 {
-                    successCallback(JSON);
+                    successCallback([self instance].questions);
                 }
                 @catch (NSException *e) {
                     
@@ -116,7 +116,8 @@
 
 - (NSString *)accessToken
 {
-    return [NSString stringWithFormat:@"hola"];
+    NSString *accessToken = [appDelegate facebook].accessToken;
+    return accessToken;
 }
 
 @end
