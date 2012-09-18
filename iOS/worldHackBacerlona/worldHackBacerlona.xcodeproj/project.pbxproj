@@ -22,6 +22,8 @@
 		361B637216089F7E00D6A88D /* ResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 361B637016089F7E00D6A88D /* ResultVC.m */; };
 		361B637316089F7E00D6A88D /* ResultVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361B637116089F7E00D6A88D /* ResultVC.xib */; };
 		361B637616089FB900D6A88D /* GameService.m in Sources */ = {isa = PBXBuildFile; fileRef = 361B637516089FB900D6A88D /* GameService.m */; };
+		CD89957C1608A1B00024C6A9 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD89957A1608A1B00024C6A9 /* WelcomeViewController.m */; };
+		CD89957D1608A1B00024C6A9 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD89957B1608A1B00024C6A9 /* WelcomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,9 @@
 		361B637116089F7E00D6A88D /* ResultVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResultVC.xib; path = Classes/UI/ResultVC.xib; sourceTree = "<group>"; };
 		361B637416089FB900D6A88D /* GameService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameService.h; path = Classes/BLL/GameService.h; sourceTree = "<group>"; };
 		361B637516089FB900D6A88D /* GameService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameService.m; path = Classes/BLL/GameService.m; sourceTree = "<group>"; };
+		CD8995791608A1B00024C6A9 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeViewController.h; path = Classes/UI/WelcomeVC/WelcomeViewController.h; sourceTree = "<group>"; };
+		CD89957A1608A1B00024C6A9 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeViewController.m; path = Classes/UI/WelcomeVC/WelcomeViewController.m; sourceTree = "<group>"; };
+		CD89957B1608A1B00024C6A9 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WelcomeViewController.xib; path = Classes/UI/WelcomeVC/WelcomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +133,7 @@
 		361B636316089F0900D6A88D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CD8995781608A18D0024C6A9 /* WelcomeVC */,
 				361B636516089F3E00D6A88D /* LoginVC.h */,
 				361B636616089F3E00D6A88D /* LoginVC.m */,
 				361B636716089F3E00D6A88D /* LoginVC.xib */,
@@ -148,6 +154,16 @@
 				361B637516089FB900D6A88D /* GameService.m */,
 			);
 			name = BLL;
+			sourceTree = "<group>";
+		};
+		CD8995781608A18D0024C6A9 /* WelcomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				CD8995791608A1B00024C6A9 /* WelcomeViewController.h */,
+				CD89957A1608A1B00024C6A9 /* WelcomeViewController.m */,
+				CD89957B1608A1B00024C6A9 /* WelcomeViewController.xib */,
+			);
+			name = WelcomeVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +221,7 @@
 				361B636916089F3E00D6A88D /* LoginVC.xib in Resources */,
 				361B636E16089F6E00D6A88D /* GameVC.xib in Resources */,
 				361B637316089F7E00D6A88D /* ResultVC.xib in Resources */,
+				CD89957D1608A1B00024C6A9 /* WelcomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +239,7 @@
 				361B636D16089F6E00D6A88D /* GameVC.m in Sources */,
 				361B637216089F7E00D6A88D /* ResultVC.m in Sources */,
 				361B637616089FB900D6A88D /* GameService.m in Sources */,
+				CD89957C1608A1B00024C6A9 /* WelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +345,7 @@
 				361B6361160898BC00D6A88D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

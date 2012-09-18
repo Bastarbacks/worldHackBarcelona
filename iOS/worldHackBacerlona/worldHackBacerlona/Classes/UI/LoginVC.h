@@ -10,4 +10,7 @@
 
 @interface LoginVC : UIViewController
 
+
+-(IBAction)close:(id)sender;
+
 @end

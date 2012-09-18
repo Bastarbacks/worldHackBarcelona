@@ -1,18 +1,19 @@
 //
-//  LoginVC.m
+//  WelcomeViewController.m
 //  worldHackBacerlona
 //
-//  Created by Oriol Blanc on 18/09/12.
+//  Created by Valenti on 18/09/12.
 //  Copyright (c) 2012 Bastarbuks. All rights reserved.
 //
 
+#import "WelcomeViewController.h"
 #import "LoginVC.h"
 
-@interface LoginVC ()
+@interface WelcomeViewController ()
 
 @end
 
-@implementation LoginVC
+@implementation WelcomeViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +28,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    //if session no valid
+    
+    LoginVC *vc = [[LoginVC alloc] initWithNibName:@"LoginVC" bundle:nil];
+    [self presentModalViewController:vc animated:NO];
+    [vc release];
 }
 
 - (void)viewDidUnload
@@ -39,10 +46,6 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
--(IBAction)close:(id)sender{
-    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end
