@@ -121,7 +121,7 @@
 		362A00D71608C7E00004F9AC /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		362A00D81608C7E00004F9AC /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		362A030F1608D00E0004F9AC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		362A031B1608D2FB0004F9AC /* 724283100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 724283100.png; path = ../../../../../../../Desktop/724283100.png; sourceTree = "<group>"; };
+		362A031B1608D2FB0004F9AC /* 724283100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 724283100.png; sourceTree = "<group>"; };
 		CD8995791608A1B00024C6A9 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeViewController.h; path = Classes/UI/WelcomeVC/WelcomeViewController.h; sourceTree = "<group>"; };
 		CD89957A1608A1B00024C6A9 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeViewController.m; path = Classes/UI/WelcomeVC/WelcomeViewController.m; sourceTree = "<group>"; };
 		CD89957B1608A1B00024C6A9 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WelcomeViewController.xib; path = Classes/UI/WelcomeVC/WelcomeViewController.xib; sourceTree = "<group>"; };
