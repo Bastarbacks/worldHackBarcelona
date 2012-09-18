@@ -21,7 +21,9 @@ import com.restfb.json.JsonObject;
 
 public class GameController extends Controller {
 
-    private static final String ACCESS_TOKEN_TEST  = "AAAFk6jZAg8FYBAIVehSSy2tDbKuieUa1sURQypZBTgPa0xOEQVwZAsxegOfJB7kTJkZAuneZAIerJX2MzWHZBlZBZA2DLKADZBVDTZCfNAyJZBUloFeHWg7bLIS";
+    // private static final String ACCESS_TOKEN_TEST =
+    // "AAAFk6jZAg8FYBAIVehSSy2tDbKuieUa1sURQypZBTgPa0xOEQVwZAsxegOfJB7kTJkZAuneZAIerJX2MzWHZBlZBZA2DLKADZBVDTZCfNAyJZBUloFeHWg7bLIS";
+    private static final String ACCESS_TOKEN_TEST  = "BAAFk6jZAg8FYBAJwGvZAqTAll4T1rtpBaFqZA6hYn8qB74mIFcKifYgkhohdCJb4j8VZCi0w0H5NREZABCZCNdujtUKZANFtCUmmMWr5Gg5Oe5RZCmbXZCoe5Kx3rd3IGZCnt1JPuVFdQZAVgZDZD";
 
     private static final int    NUMBER_SONGS_LIMIT = 2;
 
