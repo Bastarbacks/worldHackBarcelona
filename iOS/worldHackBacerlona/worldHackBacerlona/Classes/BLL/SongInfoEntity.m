@@ -14,6 +14,7 @@
 @synthesize artist = _artist;
 @synthesize cover = _cover;
 @synthesize preview = _preview;
+@synthesize deezerSong = _deezerSong;
 
 - (id)initWithTitle:(NSString *)title
               album:(NSString *)album
@@ -48,6 +49,7 @@
     [_cover release];
     [_preview release];
     [_album release];
+    [_deezerSong release];
     
     [super dealloc];
 }

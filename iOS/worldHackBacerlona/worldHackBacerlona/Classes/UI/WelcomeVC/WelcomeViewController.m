@@ -75,7 +75,6 @@
 
 -(IBAction)start:(id)sender
 {
-    [GameService getDeezerPreviewForSongInfo:nil];
     [GameService getQuestionsAndAnswersWithSuccess:^(id data) {
  
         GameVC * vc = [[[GameVC alloc] initWithNibName:@"GameVC" bundle:nil] autorelease];
