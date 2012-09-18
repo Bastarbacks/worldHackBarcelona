@@ -13,6 +13,8 @@ typedef void (^ErrorCallback)(NSError *error);
 
 @interface GameService : AFHTTPClient
 
+@property (nonatomic, retain) NSArray *questions;
+
 + (void)loginWithAccessToken:(NSString *)accessToken
                      success:(SuccessCallback)success
                        error:(ErrorCallback)error;

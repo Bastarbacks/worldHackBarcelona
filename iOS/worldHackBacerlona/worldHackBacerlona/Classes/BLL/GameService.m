@@ -7,15 +7,19 @@
 //
 
 #import "GameService.h"
+#import "QuestionEntity.h"
+#import "AnswerEntity.h"
 
 #import "AFJSONRequestOperation.h"
 
 @interface GameService ()
-@property (nonatomic, readonly) NSString *accessToken;
+    @property (nonatomic, readonly) NSString *accessToken;
+
     + (GameService *)instance;
 @end
 
 @implementation GameService
+@synthesize questions = _questions;
 
 #pragma mark - Singleton
 
@@ -25,7 +29,7 @@
     static GameService *myInstance = nil;
     
     dispatch_once(&dispatchOncePredicate, ^{
-        myInstance = [[self alloc] initWithBaseURL:[NSURL URLWithString:@"http://fbhackworld.fegabe.es/"]];
+        myInstance = [[self alloc] initWithBaseURL:[NSURL URLWithString:@"http://50.17.254.203:6699/"]];
 	});
     
     return myInstance;
@@ -48,22 +52,47 @@
     
     AFHTTPRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSURLResponse *response, id JSON) {
 
-        if (successCallback != NULL)
+        if (JSON != nil && [JSON objectForKey:@"questions"] != nil)
         {
-            @try
+            NSMutableArray *array = [NSMutableArray array];
+            for (NSDictionary *tmpQuestion in [JSON objectForKey:@"questions"])
             {
-                successCallback(JSON);
-            }
-            @catch (NSException *e) {
+                NSString *title = [tmpQuestion valueForKey:@"title"];
+                NSUInteger correctAnswer = [[tmpQuestion valueForKey:@"correctAnswer"] intValue];
+                NSMutableArray *answers = [NSMutableArray array];
                 
-                if (errorCallback != NULL)
+                for (NSDictionary *tmpAnswer in [tmpQuestion objectForKey:@"answers"])
                 {
-                    errorCallback(nil);
+                    AnswerEntity *answer = [[AnswerEntity alloc] initWithTitle:[tmpAnswer valueForKey:@"answer"]];
+                    [answers addObject:answer];
+                    [answer release];
                 }
-                
-                return;
+                QuestionEntity *question = [[QuestionEntity alloc] initWithTitle:title
+                                                                         answers:answers
+                                                                   correctAnswer:correctAnswer];
+                [array addObject:question];
+                [question release];
+            }
+            [self instance].questions = array;
+            
+            if (successCallback != NULL)
+            {
+                @try
+                {
+                    successCallback(JSON);
+                }
+                @catch (NSException *e) {
+                    
+                    if (errorCallback != NULL)
+                    {
+                        errorCallback(nil);
+                    }
+                    
+                    return;
+                }
             }
         }
+        
     } failure:^(NSURLRequest *request, NSURLResponse *response, NSError *error, id JSON) {
         if (errorCallback != NULL)
         {
@@ -89,6 +118,5 @@
 {
     return [NSString stringWithFormat:@"hola"];
 }
-
 
 @end
