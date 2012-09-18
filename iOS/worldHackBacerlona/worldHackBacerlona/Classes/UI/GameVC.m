@@ -133,9 +133,6 @@
             break;
     }
     
-    if (indexPath.section == 0 && indexPath.row) {
-        <#statements#>
-    }
     
     return cell;
 
@@ -165,7 +162,7 @@
         [self.navigationController pushViewController:vc animated:YES];
         [vc release];
     }else{
-        self.title = [NSString stringWithFormat:@"Step %i/10",step];
+        self.title = [NSString stringWithFormat:@"Step %i/%i",step,totalSteps];
         
         [self.myTableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
         [self.myTableView reloadData];
