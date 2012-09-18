@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WelcomeViewController.h"
+#import "LoginVC.h"
 
 @implementation AppDelegate
 
@@ -24,7 +25,7 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
-@synthesize facebook;
+@synthesize facebook,detailDelegate;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -172,5 +173,139 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+
+#pragma mark - Facebook
+-(void) initFacebook:(id)delegate{
+    self.detailDelegate = delegate;
+    [self initFacebook];
+}
+
+-(void)initFacebook{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"FBAccessTokenKey"]
+        && [defaults objectForKey:@"FBExpirationDateKey"]) {
+        facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
+        facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
+    }
+    if (![facebook isSessionValid]) {
+        NSArray *permissions = [[NSArray alloc] initWithObjects:
+                                @"publish_stream",
+                                //@"email",
+                                nil];
+        [facebook authorize:permissions];
+        [permissions release];
+    }
+}
+
+#pragma mark - Facebook
+
+// Pre 4.2 support
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [facebook handleOpenURL:url];
+}
+
+// For 4.2+ support
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [facebook handleOpenURL:url];
+}
+
+#pragma mark - FBRequestDelegate Methods
+- (void)request:(FBRequest *)request didReceiveResponse:(NSURLResponse *)response {
+}
+
+- (void)request:(FBRequest *)request didLoad:(id)result {
+}
+
+- (void)request:(FBRequest *)request didFailWithError:(NSError *)error {
+    NSLog(@"Err message: %@", [[error userInfo] objectForKey:@"error_msg"]);
+    NSLog(@"Err code: %d", [error code]);
+    NSLog(@"Error message: %@", [[error userInfo] objectForKey:@"error_msg"]);
+    
+    UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"Error" message:@"Error didFailWithError" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    [alert release];
+}
+
+#pragma mark - FBSessionDelegate Methods
+- (void)fbDidLogin {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
+    [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
+    [defaults synchronize];
+    
+    if (detailDelegate && [detailDelegate respondsToSelector:@selector(close:)]) {
+        
+        [(LoginVC*)detailDelegate close:nil];
+        detailDelegate = nil;
+    }
+}
+
+-(void)fbDidNotLogin:(BOOL)cancelled {
+    NSLog(@"did not login");
+}
+
+- (void) fbDidLogout {
+    // Remove saved authorization information if it exists
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"FBAccessTokenKey"]) {
+        [defaults removeObjectForKey:@"FBAccessTokenKey"];
+        [defaults removeObjectForKey:@"FBExpirationDateKey"];
+        [defaults synchronize];
+    }
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle: @"Atention"
+                          message: @"Logout done!"
+                          delegate: nil
+                          cancelButtonTitle:@"OK"
+                          otherButtonTitles:nil];
+    [alert show];
+    [alert release];
+}
+
+- (void)fbSessionInvalidated{
+    NSLog(@"fbSessionInvalidated");
+}
+
+#pragma mark - FBDialogDelegate Methods
+
+- (void)dialogDidComplete:(FBDialog *)dialog {
+    NSLog(@"dialog completed successfully");
+    
+    UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"2ManyDjs"  message:@"dialog completed successfully!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    [alert release];
+}
+
+- (void) dialogDidNotComplete:(FBDialog *)dialog {
+    NSLog(@"Dialog dismissed.");
+}
+
+- (void)dialog:(FBDialog*)dialog didFailWithError:(NSError *)error {
+    NSLog(@"Error message: %@", [[error userInfo] objectForKey:@"error_msg"]);
+        
+    UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"Error" message:@"error didFailWithError " delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    [alert release];
+}
+
+- (void)dialogDidCancel:(NSURL *)url{
+    NSLog(@"Dialog Cancel.");
+}
+
+- (void)dialogDidSucceed:(NSURL *)url{
+    
+}
+
+
+-(void)fbDidExtendToken:(NSString *)accessToken expiresAt:(NSDate *)expiresAt {
+    NSLog(@"token extended");
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:accessToken forKey:@"FBAccessTokenKey"];
+    [defaults setObject:expiresAt forKey:@"FBExpirationDateKey"];
+    [defaults synchronize];
+}
+
 
 @end

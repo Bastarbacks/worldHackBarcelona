@@ -7,6 +7,7 @@
 //
 
 #import "LoginVC.h"
+#import "AppDelegate.h"
 
 @interface LoginVC ()
 
@@ -41,8 +42,16 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
--(IBAction)close:(id)sender{
-    [self dismissModalViewControllerAnimated:YES];
+-(IBAction)pushLogin:(id)sender{
+    AppDelegate *delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [delegate initFacebook:self];
+}
+
+-(void)close:(id)sender{
+    AppDelegate *delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+
+    if([delegate.facebook isSessionValid])
+        [self dismissModalViewControllerAnimated:YES];
 }
 
 @end
