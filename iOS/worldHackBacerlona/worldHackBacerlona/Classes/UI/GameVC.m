@@ -14,6 +14,7 @@
 
 @implementation GameVC
 @synthesize myTableView,list;
+@synthesize step;
 
 -(void)dealloc{
 
@@ -33,7 +34,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    step = 1;
+    self.title = [NSString stringWithFormat:@"Step %i/10",step];
+
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
 }
 
 - (void)viewDidUnload
@@ -52,6 +59,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;
+
 }
 
 
@@ -88,14 +96,13 @@
             cell.textLabel.text = @"Question?????????????????????????";
             break;
         case 1:
-            cell.textLabel.text = [NSString stringWithFormat:@"Ansewer %i",indexPath.row];
+            cell.textLabel.text = [NSString stringWithFormat:@"Answer %i",indexPath.row];
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+
             break;
         default:
             break;
     }
-    
-    
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 
@@ -103,6 +110,13 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    step++;
+    self.title = [NSString stringWithFormat:@"Step %i/10",step];
+
+    
+    [self.myTableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
+    [self.myTableView reloadData];
     
 }
 
