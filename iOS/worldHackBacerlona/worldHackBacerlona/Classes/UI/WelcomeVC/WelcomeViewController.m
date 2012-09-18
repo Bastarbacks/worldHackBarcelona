@@ -8,6 +8,7 @@
 
 #import "WelcomeViewController.h"
 #import "LoginVC.h"
+#import "GameVC.h"
 
 @interface WelcomeViewController ()
 
@@ -46,6 +47,13 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark - action
+
+-(IBAction)start:(id)sender{
+    GameVC * vc = [[[GameVC alloc] initWithNibName:@"GameVC" bundle:nil] autorelease];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

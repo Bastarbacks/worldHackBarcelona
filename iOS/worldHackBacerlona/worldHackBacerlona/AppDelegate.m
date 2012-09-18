@@ -13,6 +13,7 @@
 
 - (void)dealloc
 {
+    [facebook release];
     [_window release];
     [_managedObjectContext release];
     [_managedObjectModel release];
@@ -23,6 +24,7 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize facebook;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
