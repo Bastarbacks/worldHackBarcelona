@@ -10,6 +10,7 @@
 #import "QuestionCell.h"
 #import "QuestionEntity.h"
 #import "ResultVC.h"
+#import "SongInfoEntity.h"
 
 @interface GameVC ()
 -(void) showWin;
@@ -133,8 +134,21 @@
             break;
     }
     
-    if (indexPath.section == 0 && indexPath.row) {
-        <#statements#>
+    if (indexPath.section == 0 && indexPath.row == 0)
+    {
+        if (quest.songInfo.deezerSong != nil)
+        {
+            cell.playButton.hidden = NO;
+            cell.textViewQuestion.frame = CGRectMake(79, 13, 182, 60);
+        }
+        else
+        {
+        }
+    }
+    else
+    {
+        cell.playButton.hidden = YES;
+        cell.textViewQuestion.frame = CGRectMake(11, 13, 250, 60);
     }
     
     return cell;

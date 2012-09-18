@@ -8,11 +8,17 @@
 
 #import "QuestionCell.h"
 
+#import <AudioToolbox/AudioToolbox.h>
+
 @implementation QuestionCell
+@synthesize playButton;
 @synthesize textViewQuestion;
+@synthesize songInfo;
 
 -(void)dealloc{
     [textViewQuestion release];
+    [playButton release];
+    [songInfo release];
     [super dealloc];
 }
 
@@ -32,4 +38,11 @@
     // Configure the view for the selected state
 }
 
+- (IBAction)playButtonPressed:(id)sender
+{
+    SystemSoundID soundID;
+    
+    AudioServicesCreateSystemSoundID((CFURLRef)self.songInfo.deezerSong, &soundID);
+    AudioServicesPlaySystemSound (soundID);
+}
 @end
