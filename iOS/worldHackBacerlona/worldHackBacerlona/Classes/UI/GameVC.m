@@ -74,6 +74,9 @@
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    if (self.list.count == 0)
+        return 0;
+    
     return 2;
 
 }
@@ -128,6 +131,10 @@
             break;
         default:
             break;
+    }
+    
+    if (indexPath.section == 0 && indexPath.row) {
+        <#statements#>
     }
     
     return cell;
