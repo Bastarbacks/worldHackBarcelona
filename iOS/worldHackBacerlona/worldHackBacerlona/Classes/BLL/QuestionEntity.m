@@ -7,6 +7,7 @@
 //
 
 #import "QuestionEntity.h"
+#import "AnswerEntity.h"
 
 @implementation QuestionEntity
 @synthesize title = _title;
@@ -15,17 +16,29 @@
 
 - (id)initWithTitle:(NSString *)title
                answers:(NSArray *)answers
-         correctAnswer:(NSUInteger)correctAnswer
+         correctAnswer:(NSUInteger)correctAnswerIndex
 {
     if (self = [super init])
     {
         self.title = title;
         self.answers = answers;
-        self.correctAnswerIndex = correctAnswer;
+        self.correctAnswerIndex = correctAnswerIndex;
     }
     
     return self;
 }
+
+- (AnswerEntity *)correctAnswer
+{
+    if (self.answers != nil && self.answers.count >= self.correctAnswerIndex)
+    {
+        return [self.answers objectAtIndex:self.correctAnswerIndex];
+    }
+    
+    return nil;
+}
+
+#pragma mark - Memory Management
 
 - (void)dealloc
 {
