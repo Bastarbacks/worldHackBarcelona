@@ -10,4 +10,10 @@
 
 @interface GameService : NSObject
 
++ (void)loginWithAccessToken:(NSString *)accessToken;
+
++ (void)getUserStats;
+
++ (void)getQuestionsAndAnswers;
+
 @end
