@@ -15,6 +15,12 @@
 		361B6355160898BC00D6A88D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 361B6354160898BC00D6A88D /* main.m */; };
 		361B6359160898BC00D6A88D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 361B6358160898BC00D6A88D /* AppDelegate.m */; };
 		361B635C160898BC00D6A88D /* worldHackBacerlona.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 361B635A160898BC00D6A88D /* worldHackBacerlona.xcdatamodeld */; };
+		361B636816089F3E00D6A88D /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 361B636616089F3E00D6A88D /* LoginVC.m */; };
+		361B636916089F3E00D6A88D /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361B636716089F3E00D6A88D /* LoginVC.xib */; };
+		361B636D16089F6E00D6A88D /* GameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 361B636B16089F6E00D6A88D /* GameVC.m */; };
+		361B636E16089F6E00D6A88D /* GameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361B636C16089F6E00D6A88D /* GameVC.xib */; };
+		361B637216089F7E00D6A88D /* ResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 361B637016089F7E00D6A88D /* ResultVC.m */; };
+		361B637316089F7E00D6A88D /* ResultVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361B637116089F7E00D6A88D /* ResultVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,15 @@
 		361B6357160898BC00D6A88D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		361B6358160898BC00D6A88D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		361B635B160898BC00D6A88D /* worldHackBacerlona.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = worldHackBacerlona.xcdatamodel; sourceTree = "<group>"; };
+		361B636516089F3E00D6A88D /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = Classes/UI/LoginVC.h; sourceTree = "<group>"; };
+		361B636616089F3E00D6A88D /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = Classes/UI/LoginVC.m; sourceTree = "<group>"; };
+		361B636716089F3E00D6A88D /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginVC.xib; path = Classes/UI/LoginVC.xib; sourceTree = "<group>"; };
+		361B636A16089F6E00D6A88D /* GameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameVC.h; path = Classes/UI/GameVC.h; sourceTree = "<group>"; };
+		361B636B16089F6E00D6A88D /* GameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameVC.m; path = Classes/UI/GameVC.m; sourceTree = "<group>"; };
+		361B636C16089F6E00D6A88D /* GameVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GameVC.xib; path = Classes/UI/GameVC.xib; sourceTree = "<group>"; };
+		361B636F16089F7E00D6A88D /* ResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultVC.h; path = Classes/UI/ResultVC.h; sourceTree = "<group>"; };
+		361B637016089F7E00D6A88D /* ResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultVC.m; path = Classes/UI/ResultVC.m; sourceTree = "<group>"; };
+		361B637116089F7E00D6A88D /* ResultVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResultVC.xib; path = Classes/UI/ResultVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +93,7 @@
 		361B634E160898BC00D6A88D /* worldHackBacerlona */ = {
 			isa = PBXGroup;
 			children = (
+				361B636216089F0300D6A88D /* Classes */,
 				361B6357160898BC00D6A88D /* AppDelegate.h */,
 				361B6358160898BC00D6A88D /* AppDelegate.m */,
 				361B635A160898BC00D6A88D /* worldHackBacerlona.xcdatamodeld */,
@@ -95,6 +111,38 @@
 				361B6356160898BC00D6A88D /* worldHackBacerlona-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		361B636216089F0300D6A88D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				361B636316089F0900D6A88D /* UI */,
+				361B636416089F1600D6A88D /* BLL */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		361B636316089F0900D6A88D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				361B636516089F3E00D6A88D /* LoginVC.h */,
+				361B636616089F3E00D6A88D /* LoginVC.m */,
+				361B636716089F3E00D6A88D /* LoginVC.xib */,
+				361B636A16089F6E00D6A88D /* GameVC.h */,
+				361B636B16089F6E00D6A88D /* GameVC.m */,
+				361B636C16089F6E00D6A88D /* GameVC.xib */,
+				361B636F16089F7E00D6A88D /* ResultVC.h */,
+				361B637016089F7E00D6A88D /* ResultVC.m */,
+				361B637116089F7E00D6A88D /* ResultVC.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		361B636416089F1600D6A88D /* BLL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BLL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +197,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				361B6353160898BC00D6A88D /* InfoPlist.strings in Resources */,
+				361B636916089F3E00D6A88D /* LoginVC.xib in Resources */,
+				361B636E16089F6E00D6A88D /* GameVC.xib in Resources */,
+				361B637316089F7E00D6A88D /* ResultVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +213,9 @@
 				361B6355160898BC00D6A88D /* main.m in Sources */,
 				361B6359160898BC00D6A88D /* AppDelegate.m in Sources */,
 				361B635C160898BC00D6A88D /* worldHackBacerlona.xcdatamodeld in Sources */,
+				361B636816089F3E00D6A88D /* LoginVC.m in Sources */,
+				361B636D16089F6E00D6A88D /* GameVC.m in Sources */,
+				361B637216089F7E00D6A88D /* ResultVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
