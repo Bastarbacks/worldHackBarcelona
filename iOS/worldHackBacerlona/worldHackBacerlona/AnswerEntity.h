@@ -10,4 +10,6 @@
 
 @interface AnswerEntity : NSObject
 
+@property (nonatomic, retain) NSString *title;
+
 @end

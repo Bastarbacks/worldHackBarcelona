@@ -9,5 +9,23 @@
 #import "AnswerEntity.h"
 
 @implementation AnswerEntity
+@synthesize title = _title;
+
+- (id)initWithTitle:(NSString *)title
+{
+    if (self = [super init])
+    {
+        self.title = title;
+    }
+    
+    return self;
+}
+
+- (void)dealloc
+{
+    [_title release];
+    
+    [super dealloc];
+}
 
 @end
