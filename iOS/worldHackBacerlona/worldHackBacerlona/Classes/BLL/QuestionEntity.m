@@ -7,16 +7,20 @@
 //
 
 #import "QuestionEntity.h"
+
 #import "AnswerEntity.h"
+#import "SongInfoEntity.h"
 
 @implementation QuestionEntity
 @synthesize title = _title;
 @synthesize correctAnswerIndex = _correctAnswerIndex;
 @synthesize answers = _answers;
+@synthesize songInfo = _songInfo;
 
 - (id)initWithTitle:(NSString *)title
-               answers:(NSArray *)answers
-         correctAnswer:(NSUInteger)correctAnswerIndex
+            answers:(NSArray *)answers
+      correctAnswer:(NSUInteger)correctAnswerIndex
+           songInfo:(SongInfoEntity *)songInfo
 {
     if (self = [super init])
     {
@@ -38,12 +42,18 @@
     return nil;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"[Question] %@ (correctAnswer: %d) \n%@", self.title, self.correctAnswerIndex, self.answers];
+}
+
 #pragma mark - Memory Management
 
 - (void)dealloc
 {
     [_title release];
     [_answers release];
+    [_songInfo release];
     
     [super dealloc];
 }

@@ -21,6 +21,13 @@
     return self;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"[Answer] %@", self.title];
+}
+
+#pragma mark - Memory Management
+
 - (void)dealloc
 {
     [_title release];
