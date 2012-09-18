@@ -1,7 +1,6 @@
 package models;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -23,18 +22,18 @@ public class Question {
 
     public static Question newQuestion(Song song, List<SimpleSong> allSimpleSongs) {
 
-        long seed = new Date().getTime();
-        Random rnd = new Random(seed);
+        Random rnd = new Random();
         Question question = null;
 
         int randomQuestion = rnd.nextInt(QuestionType.values().length);
+
+        Logger.info("_______randomQuestion %d. of total %d", randomQuestion, QuestionType.values().length);
 
         if (randomQuestion == 0) {
             question = newQuestionSongForArtist(song, allSimpleSongs);
         }
         else if (randomQuestion == 1) {
-            question = newQuestionSongForArtist(song, allSimpleSongs);
-            // question = newQuestionArtistForSong(song, allSimpleSongs);
+            question = newQuestionSongForAlbum(song, allSimpleSongs);
         }
 
         question.correctSong = song;
@@ -90,17 +89,21 @@ public class Question {
 
     private static Question newQuestionSongForArtist(Song song, List<SimpleSong> allSimpleSongs) {
 
-        String title = String.format("Qué canción es del artista '%s'", song.getArtist());
+        String title = String.format("Qué canción es del artista '%s'?", song.getArtist());
 
         Question question = new Question(title);
 
         return question;
     }
 
-    // private static Question newQuestionArtistForSong(Song song, List<SimpleSong> allSimpleSongs) {
-    // // TODO Auto-generated method stub
-    // return null;
-    // }
+    private static Question newQuestionSongForAlbum(Song song, List<SimpleSong> allSimpleSongs) {
+
+        String title = String.format("Qué canción es del álbum '%s'?", song.getAlbum());
+
+        Question question = new Question(title);
+
+        return question;
+    }
 
     private Question(String title) {
 

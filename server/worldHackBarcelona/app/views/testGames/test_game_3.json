@@ -1,0 +1,204 @@
+{
+    "questions": [
+ 
+        {
+            "title": "Qué canción es del artista 'Txarango'",
+            "correctAnswer": 2,
+            "answers": [
+                {
+                    "answer": "Cara De Monstruito"
+                },                {
+                    "answer": "Blood Like Lemonade"
+                },                {
+                    "answer": "En Caravana"
+                },                {
+                    "answer": "Por La Mar Chica Del Puerto"
+                }            ],
+            "songInfo": {
+                "title": "En Caravana",
+                "artist": "Txarango",
+                "album": "Benvinguts al Llarg Viatge",
+                "cover": "http://o.scdn.co/thumb/20850db01a13bc689fb01ce4091bf726b3dc60a4"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Petti'",
+            "correctAnswer": 2,
+            "answers": [
+                {
+                    "answer": "Cara De Monstruito"
+                },                {
+                    "answer": "Blood Like Lemonade"
+                },                {
+                    "answer": "Hauskorrak"
+                },                {
+                    "answer": "Por La Mar Chica Del Puerto"
+                }            ],
+            "songInfo": {
+                "title": "Hauskorrak",
+                "artist": "Petti",
+                "album": "On",
+                "cover": "http://o.scdn.co/thumb/c18a3933b206fd169798d2acf3266fb7a5345718"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Fira Fem'",
+            "correctAnswer": 2,
+            "answers": [
+                {
+                    "answer": "Cara De Monstruito"
+                },                {
+                    "answer": "Blood Like Lemonade"
+                },                {
+                    "answer": "Cine Azteca"
+                },                {
+                    "answer": "Por La Mar Chica Del Puerto"
+                }            ],
+            "songInfo": {
+                "title": "Cine Azteca",
+                "artist": "Fira Fem",
+                "album": "Aedificatoria",
+                "cover": "http://o.scdn.co/thumb/f0c3a742ac7335077feaee9f9f6a08fc4881d2b2"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Sho-Hai'",
+            "correctAnswer": 3,
+            "answers": [
+                {
+                    "answer": "Blood Like Lemonade"
+                },                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "Sweet Fight"
+                },                {
+                    "answer": "De Paso"
+                }            ],
+            "songInfo": {
+                "title": "De Paso",
+                "artist": "Sho-Hai",
+                "album": "Doble Vida",
+                "cover": "http://o.scdn.co/thumb/a4bbcfdb8331c728a6e050a6ef1bbacc13941837"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Morcheeba'",
+            "correctAnswer": 3,
+            "answers": [
+                {
+                    "answer": "Blood Like Lemonade"
+                },                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "Sweet Fight"
+                },                {
+                    "answer": "Enjoy The Ride"
+                }            ],
+            "songInfo": {
+                "title": "Enjoy The Ride",
+                "artist": "Morcheeba",
+                "album": "Dive Deep",
+                "cover": "http://o.scdn.co/thumb/e7f8a11bb71ebbe3dcb46b2700836da07af71d41"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Ted Leo and the Pharmacists'",
+            "correctAnswer": 0,
+            "answers": [
+                {
+                    "answer": "Bottled In Cork"
+                },                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "07:45 (Bring me back home)"
+                },                {
+                    "answer": "Ave Fénix"
+                }            ],
+            "songInfo": {
+                "title": "Bottled In Cork",
+                "artist": "Ted Leo and the Pharmacists",
+                "album": "The Brutalist Bricks",
+                "cover": "http://o.scdn.co/thumb/6ae9c1dd0a1a7ba0e0758389bf39a8e2e1310a1f"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Maia Vidal'",
+            "correctAnswer": 0,
+            "answers": [
+                {
+                    "answer": "The Waltz of the Tick Tock of Time"
+                },                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "07:45 (Bring me back home)"
+                },                {
+                    "answer": "Ave Fénix"
+                }            ],
+            "songInfo": {
+                "title": "The Waltz of the Tick Tock of Time",
+                "artist": "Maia Vidal",
+                "album": "God Is My Bike",
+                "cover": "http://o.scdn.co/thumb/3ca78890b0c8cf4a72fb490a87977e06222d5407"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Prats'",
+            "correctAnswer": 0,
+            "answers": [
+                {
+                    "answer": "Sweet Fight"
+                },                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "07:45 (Bring me back home)"
+                },                {
+                    "answer": "Ave Fénix"
+                }            ],
+            "songInfo": {
+                "title": "Sweet Fight",
+                "artist": "Prats",
+                "album": "Bajo Cero",
+                "cover": "http://o.scdn.co/thumb/1e966ee7b53ba041455690d2ec8497e4a9004f22"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Maria Rodés'",
+            "correctAnswer": 3,
+            "answers": [
+                {
+                    "answer": "En Caravana"
+                },                {
+                    "answer": "Pasqua Florida"
+                },                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "Te Vi"
+                }            ],
+            "songInfo": {
+                "title": "Te Vi",
+                "artist": "Maria Rodés",
+                "album": "Sueño Triangular",
+                "cover": "http://o.scdn.co/thumb/95bbb429af1ba65122f59833c68bb675e4b296eb"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Maia Vidal'",
+            "correctAnswer": 3,
+            "answers": [
+                {
+                    "answer": "En Caravana"
+                },                {
+                    "answer": "Pasqua Florida"
+                },                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "The Waltz of the Tick Tock of Time"
+                }            ],
+            "songInfo": {
+                "title": "The Waltz of the Tick Tock of Time",
+                "artist": "Maia Vidal",
+                "album": "God Is My Bike",
+                "cover": "http://o.scdn.co/thumb/3ca78890b0c8cf4a72fb490a87977e06222d5407"
+            }
+        }    ]
+}

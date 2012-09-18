@@ -10,6 +10,7 @@
 #import "QuestionCell.h"
 #import "QuestionEntity.h"
 #import "ResultVC.h"
+#import "SongInfoEntity.h"
 
 @interface GameVC ()
 -(void) showWin;
