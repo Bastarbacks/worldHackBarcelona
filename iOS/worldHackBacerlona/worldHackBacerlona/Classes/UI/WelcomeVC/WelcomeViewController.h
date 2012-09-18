@@ -10,4 +10,7 @@
 
 @interface WelcomeViewController : UIViewController
 
+
+-(IBAction)start:(id)sender;
+
 @end
