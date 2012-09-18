@@ -12,4 +12,6 @@
 
 @property (nonatomic, retain) NSString *title;
 
+- (id)initWithTitle:(NSString *)title;
+
 @end

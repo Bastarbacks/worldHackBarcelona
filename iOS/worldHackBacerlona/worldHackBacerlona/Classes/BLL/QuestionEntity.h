@@ -18,4 +18,8 @@
 
 @property (nonatomic, assign) AnswerEntity *correctAnswer;
 
+- (id)initWithTitle:(NSString *)title
+            answers:(NSArray *)answers
+      correctAnswer:(NSUInteger)correctAnswerIndex;
+
 @end
