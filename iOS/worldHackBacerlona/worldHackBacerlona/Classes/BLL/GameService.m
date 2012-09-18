@@ -121,7 +121,12 @@
                             success:(SuccessCallback)success
                               error:(ErrorCallback)error
 {
-    NSString *query = [NSString stringWithFormat:@"%@+%@", songInfo.title, songInfo.artist];
+    if (songInfo == nil)
+    {
+        return;
+    }
+    NSString *query = @"manel+benvolgut";
+    //NSString *query = [NSString stringWithFormat:@"%@+%@", songInfo.title, songInfo.artist];
     NSDictionary *parameters = [NSDictionary dictionaryWithObject:query forKey:@"q"];
     NSMutableURLRequest *request = [[self instance].deezer requestWithMethod:@"GET" path:@"search/track" parameters:parameters];
     
@@ -129,7 +134,17 @@
         
         if (JSON != nil && [JSON objectForKey:@"data"] != nil)
         {
+            NSArray *arraySongs = [JSON objectForKey:@"data"];
             
+            if (arraySongs.count > 0)
+            {
+                NSURL *url = [NSURL URLWithString:[[arraySongs objectAtIndex:0] objectForKey:@"preview"]];
+                
+                if (success != NULL)
+                {
+                    success(url);
+                }
+            }
         }
         
     } failure:^(NSURLRequest *request, NSURLResponse *response, NSError *error, id JSON) {
