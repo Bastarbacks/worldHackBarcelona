@@ -27,6 +27,7 @@
         self.title = title;
         self.answers = answers;
         self.correctAnswerIndex = correctAnswerIndex;
+        self.songInfo = songInfo;
     }
     
     return self;

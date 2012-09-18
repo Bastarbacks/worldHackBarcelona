@@ -136,7 +136,7 @@
     
     if (indexPath.section == 0 && indexPath.row == 0)
     {
-        if (quest.songInfo.deezerSong != nil)
+        if (quest.songInfo != nil && quest.songInfo.deezerSong != nil)
         {
             cell.songInfo = quest.songInfo;
             cell.playButton.hidden = NO;
@@ -144,6 +144,8 @@
         }
         else
         {
+            cell.playButton.hidden = YES;
+            cell.textViewQuestion.frame = CGRectMake(11, 13, 250, 60);
         }
     }
     else
