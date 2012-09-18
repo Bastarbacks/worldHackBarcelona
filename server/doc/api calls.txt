@@ -1,1 +1,6 @@
 api calls
+==========
+
+hackworkd_url="http://gossip.fegabe.es:6699"
+
+curl "$hackworkd_url/play?access_token=token"
