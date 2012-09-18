@@ -12,8 +12,9 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate,FBSessionDelegate,FBRequestDelegate,FBDialogDelegate>{
 
     Facebook                    *facebook;
-
+    id                          detailDelegate;
 }
+@property (nonatomic, retain) id                       detailDelegate;
 
 @property (strong, nonatomic) UIWindow *window;
 

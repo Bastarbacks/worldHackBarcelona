@@ -11,6 +11,7 @@
 @interface LoginVC : UIViewController
 
 
--(IBAction)close:(id)sender;
+-(void)close:(id)sender;
+-(IBAction)pushLogin:(id)sender;
 
 @end

@@ -9,9 +9,10 @@
 #import "WelcomeViewController.h"
 #import "LoginVC.h"
 #import "GameVC.h"
+#import "AppDelegate.h"
 
 @interface WelcomeViewController ()
-
+-(void)makeLogout:(id)sender;
 @end
 
 @implementation WelcomeViewController
@@ -28,13 +29,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    AppDelegate *delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(makeLogout:)];
+    [self.navigationItem setRightBarButtonItem:barButton];
+    [barButton release];
     
     //if session no valid
+    
+    if(![delegate.facebook isSessionValid]){
+        LoginVC *vc = [[LoginVC alloc] initWithNibName:@"LoginVC" bundle:nil];
+        [self presentModalViewController:vc animated:NO];
+        [vc release];
+    }
+}
+
+-(void)makeLogout:(id)sender{
+    AppDelegate *delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [delegate.facebook logout];
     
     LoginVC *vc = [[LoginVC alloc] initWithNibName:@"LoginVC" bundle:nil];
     [self presentModalViewController:vc animated:NO];
     [vc release];
+
 }
 
 - (void)viewDidUnload
