@@ -20,9 +20,7 @@ typedef void (^ErrorCallback)(NSError *error);
 + (void)getQuestionsAndAnswersWithSuccess:(SuccessCallback)success
                                     error:(ErrorCallback)error;
 
-+ (void)getDeezerPreviewForSongInfo:(SongInfoEntity *)songInfo
-                            success:(SuccessCallback)success
-                              error:(ErrorCallback)error;
++ (void)getDeezerPreviewForSongInfo:(SongInfoEntity *)songInfo;
 
 //
 + (void)getUserStatsWithSuccess:(SuccessCallback)success

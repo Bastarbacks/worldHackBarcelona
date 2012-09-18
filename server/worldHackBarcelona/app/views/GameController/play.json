@@ -1,54 +1,23 @@
 {
     "questions": [
+#{list items:questions, as:'question' } 
         {
-            "title": "de qué artista es la canción Baba O'Riley?",
-            "correctAnswer": 0,
+            "title": "${question.title}",
+            "correctAnswer": ${question.correctAnswer},
             "answers": [
+#{list items:question.answers, as:'answer' }
                 {
-                    "answer": "The Who"
-                },
-                {
-                    "answer": "Estopa"
-                },
-                {
-                    "answer": "Madonna"
-                },
-                {
-                    "answer": "David Bowie"
-                }
+                    "answer": "${answer.title}"
+                }#{if !answer_isLast},#{/if}
+#{/list}
             ],
             "songInfo": {
-                "title": "Baba O'Riley",
-                "artist": "The Who",
-                "album": "Who's Next",
-                "cover": "http://api.deezer.com/2.0/album/217934/image",
-                "preview": "http://cdn-preview-b.deezer.com/stream/bb0a2c4c855e34ad8114266d3c23b57b-0.mp3"
+                "title": "${question.correctSong.title}",
+                "artist": "${question.correctSong.artist}",
+                "album": "${question.correctSong.album}",
+                "cover": "${question.correctSong.cover}"
             }
-        },
-        {
-            "title": "de quién es el álbum  A Day at the Races?",
-            "correctAnswer": 0,
-            "answers": [
-                {
-                    "answer": "Queen"
-                },
-                {
-                    "answer": "Estopa"
-                },
-                {
-                    "answer": "Madonna"
-                },
-                {
-                    "answer": "David Bowie"
-                }
-            ],
-            "songInfo": {
-                "title": "Tie Your Mother Down",
-                "artist": "Queen",
-                "album": "A Day at the Races",
-                "cover": "http://api.deezer.com/2.0/album/917233/image",
-                "preview": "http://cdn-preview-4.deezer.com/stream/444fb61ec5b48a498e351d7c3690a62c-0.mp3"
-            }
-        }
+        }#{if !question_isLast},#{/if}
+#{/list}
     ]
 }
