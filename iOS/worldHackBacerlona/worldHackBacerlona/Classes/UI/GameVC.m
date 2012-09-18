@@ -134,22 +134,6 @@
             break;
     }
     
-    if (indexPath.section == 0 && indexPath.row == 0)
-    {
-        if (quest.songInfo.deezerSong != nil)
-        {
-            cell.playButton.hidden = NO;
-            cell.textViewQuestion.frame = CGRectMake(79, 13, 182, 60);
-        }
-        else
-        {
-        }
-    }
-    else
-    {
-        cell.playButton.hidden = YES;
-        cell.textViewQuestion.frame = CGRectMake(11, 13, 250, 60);
-    }
     
     return cell;
 
@@ -179,7 +163,7 @@
         [self.navigationController pushViewController:vc animated:YES];
         [vc release];
     }else{
-        self.title = [NSString stringWithFormat:@"Step %i/10",step];
+        self.title = [NSString stringWithFormat:@"Step %i/%i",step,totalSteps];
         
         [self.myTableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
         [self.myTableView reloadData];

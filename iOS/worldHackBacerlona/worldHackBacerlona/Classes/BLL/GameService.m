@@ -87,8 +87,6 @@
                                                                    correctAnswer:correctAnswer
                                                                         songInfo:songInfo];
                 [array addObject:question];
-                [array addObject:question];//todoooo
-                [array addObject:question];
                 [question release];
             }
             [self instance].questions = array;

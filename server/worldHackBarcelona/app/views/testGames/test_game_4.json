@@ -1,0 +1,204 @@
+{
+    "questions": [
+ 
+        {
+            "title": "Qué canción es del artista 'Petti'",
+            "correctAnswer": 0,
+            "answers": [
+                {
+                    "answer": "Hauskorrak"
+                },                {
+                    "answer": "Bottled In Cork"
+                },                {
+                    "answer": "Bottled In Cork"
+                },                {
+                    "answer": "Caballo de Troya 25"
+                }            ],
+            "songInfo": {
+                "title": "Hauskorrak",
+                "artist": "Petti",
+                "album": "On",
+                "cover": "http://o.scdn.co/thumb/c18a3933b206fd169798d2acf3266fb7a5345718"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Sho-Hai'",
+            "correctAnswer": 0,
+            "answers": [
+                {
+                    "answer": "De Paso"
+                },                {
+                    "answer": "Bottled In Cork"
+                },                {
+                    "answer": "Bottled In Cork"
+                },                {
+                    "answer": "Caballo de Troya 25"
+                }            ],
+            "songInfo": {
+                "title": "De Paso",
+                "artist": "Sho-Hai",
+                "album": "Doble Vida",
+                "cover": "http://o.scdn.co/thumb/a4bbcfdb8331c728a6e050a6ef1bbacc13941837"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Morcheeba'",
+            "correctAnswer": 0,
+            "answers": [
+                {
+                    "answer": "Crimson"
+                },                {
+                    "answer": "Bottled In Cork"
+                },                {
+                    "answer": "Bottled In Cork"
+                },                {
+                    "answer": "Caballo de Troya 25"
+                }            ],
+            "songInfo": {
+                "title": "Crimson",
+                "artist": "Morcheeba",
+                "album": "Blood Like Lemonade",
+                "cover": "http://o.scdn.co/thumb/7b6d28753d1f889e2d4cb27a1b4355939f524fb7"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Maria Rodés'",
+            "correctAnswer": 1,
+            "answers": [
+                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "Te Vi"
+                },                {
+                    "answer": "Caballo de Troya 25"
+                },                {
+                    "answer": "Crimson"
+                }            ],
+            "songInfo": {
+                "title": "Te Vi",
+                "artist": "Maria Rodés",
+                "album": "Sueño Triangular",
+                "cover": "http://o.scdn.co/thumb/95bbb429af1ba65122f59833c68bb675e4b296eb"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Sho-Hai'",
+            "correctAnswer": 1,
+            "answers": [
+                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "De Paso"
+                },                {
+                    "answer": "Caballo de Troya 25"
+                },                {
+                    "answer": "Crimson"
+                }            ],
+            "songInfo": {
+                "title": "De Paso",
+                "artist": "Sho-Hai",
+                "album": "Doble Vida",
+                "cover": "http://o.scdn.co/thumb/a4bbcfdb8331c728a6e050a6ef1bbacc13941837"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Astrio'",
+            "correctAnswer": 1,
+            "answers": [
+                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "Pasqua Florida"
+                },                {
+                    "answer": "Caballo de Troya 25"
+                },                {
+                    "answer": "Crimson"
+                }            ],
+            "songInfo": {
+                "title": "Pasqua Florida",
+                "artist": "Astrio",
+                "album": "Don't Leave the Planet",
+                "cover": "http://o.scdn.co/thumb/cef791f61b514effde0b0d86d561377017e71d20"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'El Puchero Del Hortelano'",
+            "correctAnswer": 2,
+            "answers": [
+                {
+                    "answer": "Hauskorrak"
+                },                {
+                    "answer": "En Caravana"
+                },                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "Crimson"
+                }            ],
+            "songInfo": {
+                "title": "Ave Fénix",
+                "artist": "El Puchero Del Hortelano",
+                "album": "El tiempo de Manuel",
+                "cover": "http://o.scdn.co/thumb/0fe6fcaa1aefaa52ed9202e50ec59b6d96ced4e6"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Love of Lesbian'",
+            "correctAnswer": 2,
+            "answers": [
+                {
+                    "answer": "Hauskorrak"
+                },                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "La noche eterna"
+                },                {
+                    "answer": "En Caravana"
+                }            ],
+            "songInfo": {
+                "title": "La noche eterna",
+                "artist": "Love of Lesbian",
+                "album": "La noche eterna. Los días no vividos",
+                "cover": "http://o.scdn.co/thumb/2d14b9d4e0e15366aefc256f7974fac7c31aa2ed"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'El Puchero Del Hortelano'",
+            "correctAnswer": 2,
+            "answers": [
+                {
+                    "answer": "Hauskorrak"
+                },                {
+                    "answer": "En Caravana"
+                },                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "Crimson"
+                }            ],
+            "songInfo": {
+                "title": "Ave Fénix",
+                "artist": "El Puchero Del Hortelano",
+                "album": "El tiempo de Manuel",
+                "cover": "http://o.scdn.co/thumb/0fe6fcaa1aefaa52ed9202e50ec59b6d96ced4e6"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Amatria'",
+            "correctAnswer": 1,
+            "answers": [
+                {
+                    "answer": "Bottled In Cork"
+                },                {
+                    "answer": "Cara De Monstruito"
+                },                {
+                    "answer": "Enjoy The Ride"
+                },                {
+                    "answer": "La noche eterna"
+                }            ],
+            "songInfo": {
+                "title": "Cara De Monstruito",
+                "artist": "Amatria",
+                "album": "Hoy van a salirte las alas",
+                "cover": "http://o.scdn.co/thumb/750ebe128d44c0b8e003fe080d05a18242125c53"
+            }
+        }    ]
+}

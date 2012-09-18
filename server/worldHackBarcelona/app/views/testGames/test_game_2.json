@@ -1,0 +1,204 @@
+{
+    "questions": [
+ 
+        {
+            "title": "Qué canción es del artista 'Astrio'",
+            "correctAnswer": 2,
+            "answers": [
+                {
+                    "answer": "Te Vi"
+                },                {
+                    "answer": "Cara De Monstruito"
+                },                {
+                    "answer": "Pasqua Florida"
+                },                {
+                    "answer": "De Paso"
+                }            ],
+            "songInfo": {
+                "title": "Pasqua Florida",
+                "artist": "Astrio",
+                "album": "Don't Leave the Planet",
+                "cover": "http://o.scdn.co/thumb/cef791f61b514effde0b0d86d561377017e71d20"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Love of Lesbian'",
+            "correctAnswer": 3,
+            "answers": [
+                {
+                    "answer": "Caballo de Troya 25"
+                },                {
+                    "answer": "Blood Like Lemonade"
+                },                {
+                    "answer": "De Paso"
+                },                {
+                    "answer": "La noche eterna"
+                }            ],
+            "songInfo": {
+                "title": "La noche eterna",
+                "artist": "Love of Lesbian",
+                "album": "La noche eterna. Los días no vividos",
+                "cover": "http://o.scdn.co/thumb/2d14b9d4e0e15366aefc256f7974fac7c31aa2ed"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Morcheeba'",
+            "correctAnswer": 3,
+            "answers": [
+                {
+                    "answer": "Caballo de Troya 25"
+                },                {
+                    "answer": "Blood Like Lemonade"
+                },                {
+                    "answer": "De Paso"
+                },                {
+                    "answer": "Enjoy The Ride"
+                }            ],
+            "songInfo": {
+                "title": "Enjoy The Ride",
+                "artist": "Morcheeba",
+                "album": "Dive Deep",
+                "cover": "http://o.scdn.co/thumb/e7f8a11bb71ebbe3dcb46b2700836da07af71d41"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Amatria'",
+            "correctAnswer": 3,
+            "answers": [
+                {
+                    "answer": "Caballo de Troya 25"
+                },                {
+                    "answer": "Blood Like Lemonade"
+                },                {
+                    "answer": "De Paso"
+                },                {
+                    "answer": "Cara De Monstruito"
+                }            ],
+            "songInfo": {
+                "title": "Cara De Monstruito",
+                "artist": "Amatria",
+                "album": "Hoy van a salirte las alas",
+                "cover": "http://o.scdn.co/thumb/750ebe128d44c0b8e003fe080d05a18242125c53"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Jonston'",
+            "correctAnswer": 0,
+            "answers": [
+                {
+                    "answer": "Caballo de Troya 25"
+                },                {
+                    "answer": "De Paso"
+                },                {
+                    "answer": "Por La Mar Chica Del Puerto"
+                },                {
+                    "answer": "The Sea"
+                }            ],
+            "songInfo": {
+                "title": "Caballo de Troya 25",
+                "artist": "Jonston",
+                "album": "Veo Visones",
+                "cover": "http://o.scdn.co/thumb/2cdd496cf44d50371ae79c0460db537382cc1c2c"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Morcheeba'",
+            "correctAnswer": 0,
+            "answers": [
+                {
+                    "answer": "Blood Like Lemonade"
+                },                {
+                    "answer": "De Paso"
+                },                {
+                    "answer": "Por La Mar Chica Del Puerto"
+                },                {
+                    "answer": "The Sea"
+                }            ],
+            "songInfo": {
+                "title": "Blood Like Lemonade",
+                "artist": "Morcheeba",
+                "album": "Blood Like Lemonade",
+                "cover": "http://o.scdn.co/thumb/7b6d28753d1f889e2d4cb27a1b4355939f524fb7"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Prats'",
+            "correctAnswer": 0,
+            "answers": [
+                {
+                    "answer": "Sweet Fight"
+                },                {
+                    "answer": "De Paso"
+                },                {
+                    "answer": "Por La Mar Chica Del Puerto"
+                },                {
+                    "answer": "The Sea"
+                }            ],
+            "songInfo": {
+                "title": "Sweet Fight",
+                "artist": "Prats",
+                "album": "Bajo Cero",
+                "cover": "http://o.scdn.co/thumb/1e966ee7b53ba041455690d2ec8497e4a9004f22"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Sho-Hai'",
+            "correctAnswer": 0,
+            "answers": [
+                {
+                    "answer": "De Paso"
+                },                {
+                    "answer": "Por La Mar Chica Del Puerto"
+                },                {
+                    "answer": "The Sea"
+                },                {
+                    "answer": "Cine Azteca"
+                }            ],
+            "songInfo": {
+                "title": "De Paso",
+                "artist": "Sho-Hai",
+                "album": "Doble Vida",
+                "cover": "http://o.scdn.co/thumb/a4bbcfdb8331c728a6e050a6ef1bbacc13941837"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Maia Vidal'",
+            "correctAnswer": 0,
+            "answers": [
+                {
+                    "answer": "The Waltz of the Tick Tock of Time"
+                },                {
+                    "answer": "De Paso"
+                },                {
+                    "answer": "Por La Mar Chica Del Puerto"
+                },                {
+                    "answer": "The Sea"
+                }            ],
+            "songInfo": {
+                "title": "The Waltz of the Tick Tock of Time",
+                "artist": "Maia Vidal",
+                "album": "God Is My Bike",
+                "cover": "http://o.scdn.co/thumb/3ca78890b0c8cf4a72fb490a87977e06222d5407"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Maria Rodés'",
+            "correctAnswer": 1,
+            "answers": [
+                {
+                    "answer": "Bottled In Cork"
+                },                {
+                    "answer": "Te Vi"
+                },                {
+                    "answer": "The Waltz of the Tick Tock of Time"
+                },                {
+                    "answer": "Rome Wasn't Built In A Day"
+                }            ],
+            "songInfo": {
+                "title": "Te Vi",
+                "artist": "Maria Rodés",
+                "album": "Sueño Triangular",
+                "cover": "http://o.scdn.co/thumb/95bbb429af1ba65122f59833c68bb675e4b296eb"
+            }
+        }    ]
+}
