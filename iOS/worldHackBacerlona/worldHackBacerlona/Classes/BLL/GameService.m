@@ -15,6 +15,8 @@
 
 @interface GameService ()
     @property (nonatomic, readonly) NSString *accessToken;
+    @property (nonatomic, retain) AFHTTPClient *game;
+    @property (nonatomic, retain) AFHTTPClient *deezer;
 
     + (GameService *)instance;
 @end
@@ -30,7 +32,9 @@
     static GameService *myInstance = nil;
     
     dispatch_once(&dispatchOncePredicate, ^{
-        myInstance = [[self alloc] initWithBaseURL:[NSURL URLWithString:@"http://50.17.254.203:6699/"]];
+        myInstance = [[self alloc] init];
+        myInstance.game = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://50.17.254.203:6699/"]];
+        myInstance.deezer = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://api.deezer.com/2.0/"]];
 	});
     
     return myInstance;
@@ -38,18 +42,11 @@
 
 #pragma mark - Requests
 
-+ (void)loginWithAccessToken:(NSString *)accessToken
-                     success:(SuccessCallback)success
-                       error:(ErrorCallback)error
-{
-    
-}
-
 + (void)getQuestionsAndAnswersWithSuccess:(SuccessCallback)successCallback
                                     error:(ErrorCallback)errorCallback
 {
     NSDictionary *parameters = [NSDictionary dictionaryWithObject:[self instance].accessToken forKey:@"accessToken"];
-    NSMutableURLRequest *request = [[self instance] requestWithMethod:@"GET" path:@"play" parameters:parameters];
+    NSMutableURLRequest *request = [[self instance].game requestWithMethod:@"GET" path:@"play" parameters:parameters];
     
     AFHTTPRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSURLResponse *response, id JSON) {
 
@@ -85,6 +82,8 @@
                                                                    correctAnswer:correctAnswer
                                                                         songInfo:songInfo];
                 [array addObject:question];
+                [array addObject:question];//todoooo
+                [array addObject:question];
                 [question release];
             }
             [self instance].questions = array;
@@ -116,14 +115,54 @@
     
     if (operation)
     {
-        [[self instance].operationQueue addOperation:operation];
+        [[self instance].game.operationQueue addOperation:operation];
+    }
+}
+
++ (void)getDeezerPreviewForSongInfo:(SongInfoEntity *)songInfo
+                            success:(SuccessCallback)success
+                              error:(ErrorCallback)error
+{
+    if (songInfo == nil)
+    {
+        return;
+    }
+    NSString *query = @"manel+benvolgut";
+    //NSString *query = [NSString stringWithFormat:@"%@+%@", songInfo.title, songInfo.artist];
+    NSDictionary *parameters = [NSDictionary dictionaryWithObject:query forKey:@"q"];
+    NSMutableURLRequest *request = [[self instance].deezer requestWithMethod:@"GET" path:@"search/track" parameters:parameters];
+    
+    AFHTTPRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSURLResponse *response, id JSON) {
+        
+        if (JSON != nil && [JSON objectForKey:@"data"] != nil)
+        {
+            NSArray *arraySongs = [JSON objectForKey:@"data"];
+            
+            if (arraySongs.count > 0)
+            {
+                NSURL *url = [NSURL URLWithString:[[arraySongs objectAtIndex:0] objectForKey:@"preview"]];
+                
+                if (success != NULL)
+                {
+                    success(url);
+                }
+            }
+        }
+        
+    } failure:^(NSURLRequest *request, NSURLResponse *response, NSError *error, id JSON) {
+        NSLog(@"error");
+    }];
+    
+    if (operation)
+    {
+        [[self instance].deezer.operationQueue addOperation:operation];
     }
 }
 
 + (void)getUserStatsWithSuccess:(SuccessCallback)success
                           error:(ErrorCallback)error
 {
-    
+   
 }
 
 #pragma mark - Private Methods
@@ -133,5 +172,11 @@
     NSString *accessToken = [appDelegate facebook].accessToken;
     return accessToken;
 }
+
++ (NSArray*)questions{
+    return [self instance].questions;
+}
+
+
 
 @end

@@ -44,6 +44,11 @@
     }
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+        [self.navigationController.navigationBar setHidden:NO];
+}
+
 -(void)makeLogout:(id)sender{
     AppDelegate *delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     [delegate.facebook logout];
@@ -70,6 +75,7 @@
 
 -(IBAction)start:(id)sender
 {
+    [GameService getDeezerPreviewForSongInfo:nil];
     [GameService getQuestionsAndAnswersWithSuccess:^(id data) {
  
         GameVC * vc = [[[GameVC alloc] initWithNibName:@"GameVC" bundle:nil] autorelease];

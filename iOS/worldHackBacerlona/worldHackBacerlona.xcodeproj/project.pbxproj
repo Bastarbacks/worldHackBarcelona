@@ -35,6 +35,7 @@
 		361B637216089F7E00D6A88D /* ResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 361B637016089F7E00D6A88D /* ResultVC.m */; };
 		361B637316089F7E00D6A88D /* ResultVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361B637116089F7E00D6A88D /* ResultVC.xib */; };
 		361B637616089FB900D6A88D /* GameService.m in Sources */ = {isa = PBXBuildFile; fileRef = 361B637516089FB900D6A88D /* GameService.m */; };
+		362A00D91608C7E00004F9AC /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 362A00D81608C7E00004F9AC /* JSONKit.m */; };
 		CD89957C1608A1B00024C6A9 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD89957A1608A1B00024C6A9 /* WelcomeViewController.m */; };
 		CD89957D1608A1B00024C6A9 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD89957B1608A1B00024C6A9 /* WelcomeViewController.xib */; };
 		CD8995911608A4B10024C6A9 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8995841608A4B10024C6A9 /* Facebook.m */; };
@@ -51,6 +52,7 @@
 		CD8995B01608A5290024C6A9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8995A91608A5290024C6A9 /* SBJsonWriter.m */; };
 		CD8995D41608B8BE0024C6A9 /* QuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8995D31608B8BE0024C6A9 /* QuestionCell.m */; };
 		CD8995D61608B8D50024C6A9 /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8995D51608B8D50024C6A9 /* QuestionCell.xib */; };
+		CD8995E21608D1AF0024C6A9 /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD8995E11608D1AF0024C6A9 /* wood.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		361B637116089F7E00D6A88D /* ResultVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResultVC.xib; path = Classes/UI/ResultVC.xib; sourceTree = "<group>"; };
 		361B637416089FB900D6A88D /* GameService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameService.h; path = Classes/BLL/GameService.h; sourceTree = "<group>"; };
 		361B637516089FB900D6A88D /* GameService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameService.m; path = Classes/BLL/GameService.m; sourceTree = "<group>"; };
+		362A00D71608C7E00004F9AC /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		362A00D81608C7E00004F9AC /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		CD8995791608A1B00024C6A9 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeViewController.h; path = Classes/UI/WelcomeVC/WelcomeViewController.h; sourceTree = "<group>"; };
 		CD89957A1608A1B00024C6A9 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeViewController.m; path = Classes/UI/WelcomeVC/WelcomeViewController.m; sourceTree = "<group>"; };
 		CD89957B1608A1B00024C6A9 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WelcomeViewController.xib; path = Classes/UI/WelcomeVC/WelcomeViewController.xib; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 		CD8995D21608B8BE0024C6A9 /* QuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionCell.h; path = Classes/UI/Cells/QuestionCell.h; sourceTree = "<group>"; };
 		CD8995D31608B8BE0024C6A9 /* QuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionCell.m; path = Classes/UI/Cells/QuestionCell.m; sourceTree = "<group>"; };
 		CD8995D51608B8D50024C6A9 /* QuestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionCell.xib; path = Classes/UI/Cells/QuestionCell.xib; sourceTree = "<group>"; };
+		CD8995E11608D1AF0024C6A9 /* wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +236,7 @@
 		361B634E160898BC00D6A88D /* worldHackBacerlona */ = {
 			isa = PBXGroup;
 			children = (
+				CD8995DF1608D1AF0024C6A9 /* Resources */,
 				361B636216089F0300D6A88D /* Classes */,
 				361B6357160898BC00D6A88D /* AppDelegate.h */,
 				361B6358160898BC00D6A88D /* AppDelegate.m */,
@@ -294,6 +300,15 @@
 			name = BLL;
 			sourceTree = "<group>";
 		};
+		362A00D61608C7E00004F9AC /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				362A00D71608C7E00004F9AC /* JSONKit.h */,
+				362A00D81608C7E00004F9AC /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
 		CD8995781608A18D0024C6A9 /* WelcomeVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +322,7 @@
 		CD89957E1608A4B10024C6A9 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				362A00D61608C7E00004F9AC /* JSONKit */,
 				360F5C7B1608A7F30044F43B /* AFNetworking */,
 				CD8995991608A5290024C6A9 /* MBProgressHUD */,
 				CD89959C1608A5290024C6A9 /* JSON */,
@@ -380,6 +396,22 @@
 				CD8995D51608B8D50024C6A9 /* QuestionCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		CD8995DF1608D1AF0024C6A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD8995E01608D1AF0024C6A9 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD8995E01608D1AF0024C6A9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CD8995E11608D1AF0024C6A9 /* wood.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,6 +488,7 @@
 				CD89957D1608A1B00024C6A9 /* WelcomeViewController.xib in Resources */,
 				CD8995921608A4B10024C6A9 /* FBDialog.bundle in Resources */,
 				CD8995D61608B8D50024C6A9 /* QuestionCell.xib in Resources */,
+				CD8995E21608D1AF0024C6A9 /* wood.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +532,7 @@
 				360F5D1B1608AF5E0044F43B /* AnswerEntity.m in Sources */,
 				360F5D321608B7F70044F43B /* SongInfoEntity.m in Sources */,
 				CD8995D41608B8BE0024C6A9 /* QuestionCell.m in Sources */,
+				362A00D91608C7E00004F9AC /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +603,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "worldHackBacerlona/worldHackBacerlona-Prefix.pch";
 				INFOPLIST_FILE = "worldHackBacerlona/worldHackBacerlona-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/worldHackBacerlona/Classes/BLL/Libs/deezer-ios-sdk-0.7.1/deezer-ios-0.7.1\"",
+					"\"$(SRCROOT)/worldHackBacerlona/Classes/BLL/Libs/deezer-ios-sdk-0.7.1/sample/DeezerSample/DeezerSample/LibDeezer\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -580,6 +619,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "worldHackBacerlona/worldHackBacerlona-Prefix.pch";
 				INFOPLIST_FILE = "worldHackBacerlona/worldHackBacerlona-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/worldHackBacerlona/Classes/BLL/Libs/deezer-ios-sdk-0.7.1/deezer-ios-0.7.1\"",
+					"\"$(SRCROOT)/worldHackBacerlona/Classes/BLL/Libs/deezer-ios-sdk-0.7.1/sample/DeezerSample/DeezerSample/LibDeezer\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

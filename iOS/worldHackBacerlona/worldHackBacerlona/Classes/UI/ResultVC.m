@@ -13,12 +13,23 @@
 @end
 
 @implementation ResultVC
+@synthesize labelWins,labelLose,labelTotal;
+@synthesize winsDet,loseDet,totalDet;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(void)dealloc{
+    [labelTotal release];
+    [labelLose release];
+    [labelWins release];
+    [super dealloc];
+}
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andWins:(int)wins_ andLose:(int)lose_ andTotal:(int)total_
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.winsDet = wins_;
+        self.loseDet = lose_;
+        self.totalDet = total_;
     }
     return self;
 }
@@ -26,7 +37,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [self.navigationController.navigationBar setHidden:YES];
+
+    self.labelWins.text = [NSString stringWithFormat:@"%i",winsDet];
+    self.labelLose.text = [NSString stringWithFormat:@"%i",loseDet];
+    self.labelTotal.text = [NSString stringWithFormat:@"%i / %i",winsDet,totalDet];
 }
 
 - (void)viewDidUnload
@@ -39,6 +55,10 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(IBAction)goStart:(id)sender{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end

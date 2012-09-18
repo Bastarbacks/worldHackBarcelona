@@ -8,17 +8,23 @@
 
 #import "GameVC.h"
 #import "QuestionCell.h"
+#import "QuestionEntity.h"
+#import "ResultVC.h"
 
 @interface GameVC ()
-
+-(void) showWin;
+-(void) showLose;
+-(void) resetBackground;
 @end
 
 @implementation GameVC
 @synthesize myTableView,list;
-@synthesize step;
+@synthesize step,wins,lose,totalSteps;
+@synthesize labelWins,labelLost;
 
 -(void)dealloc{
-
+    [labelWins release];
+    [labelLost release];
     [myTableView release];
     [super dealloc];
 }
@@ -36,12 +42,21 @@
 {
     [super viewDidLoad];
     step = 1;
-    self.title = [NSString stringWithFormat:@"Step %i/10",step];
-
+    wins = 0;
+    lose = 0;
+    
+    self.labelWins.text = [NSString stringWithFormat:@"%i",wins];
+    self.labelLost.text = [NSString stringWithFormat:@"%i",lose];
+        
+    self.list = [GameService questions];
+    totalSteps = [self.list count];
+    NSLog(@"%@",list);
+    self.title = [NSString stringWithFormat:@"Step %i/%i",step,totalSteps];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
+        [self.navigationController.navigationBar setHidden:NO];
 }
 
 - (void)viewDidUnload
@@ -99,12 +114,14 @@
 		}
 	}
     
+    QuestionEntity *quest = [self.list objectAtIndex:step-1];
+    
     switch (indexPath.section) {
         case 0:
-            cell.textViewQuestion.text = @"Questionasdasdasdasdasdasdasdas dasdasdasd as sdf dfas fdsdasdasdasda sdasd ?????????????????????????";
+            cell.textViewQuestion.text = quest.title;
             break;
         case 1:
-            cell.textViewQuestion.text = [NSString stringWithFormat:@"Answer %i",indexPath.row];
+            cell.textViewQuestion.text = [[quest.answers objectAtIndex:indexPath.row] title];;
             
             cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 
@@ -124,12 +141,28 @@
 }
 
 -(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
-
-    step++;
-    self.title = [NSString stringWithFormat:@"Step %i/10",step];
     
-    [self.myTableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
-    [self.myTableView reloadData];
+    QuestionEntity *quest = [self.list objectAtIndex:step-1];
+    
+    if ([quest correctAnswerIndex] == indexPath.row) {
+        [self showWin];
+    }else{
+        [self showLose];
+    }
+    
+    //correctAnswerIndex
+    step++;
+    
+    if(step>totalSteps){
+        ResultVC *vc = [[ResultVC alloc]initWithNibName:@"ResultVC" bundle:nil andWins:wins andLose:lose andTotal:totalSteps];
+        [self.navigationController pushViewController:vc animated:YES];
+        [vc release];
+    }else{
+        self.title = [NSString stringWithFormat:@"Step %i/10",step];
+        
+        [self.myTableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
+        [self.myTableView reloadData];
+    }
 
 }
 
@@ -153,12 +186,16 @@
 		}
 	}
     
+    QuestionEntity *quest = [self.list objectAtIndex:step-1];
+    
     switch (indexPath.section) {
         case 0:
-            cell.textViewQuestion.text = @"Questionasdasdasdasdasdasdasdas dasdasdasd as sdf dfas fdsdasdasdasda sdasd ?????????????????????????";
+            cell.textViewQuestion.text = quest.title;
             break;
         case 1:
-            cell.textViewQuestion.text = [NSString stringWithFormat:@"Answer %i",indexPath.row];
+            cell.textViewQuestion.text = [[quest.answers objectAtIndex:indexPath.row] title];;
+            
+            cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
             
             break;
         default:
@@ -170,7 +207,32 @@
     cell.textViewQuestion.frame = frame;
     
     
-    return 30+cell.textViewQuestion.frame.size.height;
+    return 10+cell.textViewQuestion.frame.size.height;
+}
+
+-(void) showWin{
+    wins++;
+    self.labelWins.text = [NSString stringWithFormat:@"%i",wins];
+    self.labelLost.text = [NSString stringWithFormat:@"%i",lose];
+    
+    [self.myTableView setBackgroundColor:[UIColor greenColor]];
+    [self.view setBackgroundColor:[UIColor greenColor]];
+    
+    [self performSelectorInBackground:@selector(resetBackground) withObject:nil];
+}
+
+-(void) showLose{
+    lose++;
+    self.labelWins.text = [NSString stringWithFormat:@"%i",wins];
+    self.labelLost.text = [NSString stringWithFormat:@"%i",lose];
+    [self.myTableView setBackgroundColor:[UIColor redColor]];
+    [self.view setBackgroundColor:[UIColor redColor]];
+    [self performSelectorInBackground:@selector(resetBackground) withObject:nil];
+}
+
+-(void) resetBackground{
+//    [self.myTableView setBackgroundColor:[UIColor whiteColor]];
+//    [self.view setBackgroundColor:[UIColor whiteColor]];
 }
 
 

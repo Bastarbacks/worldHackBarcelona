@@ -1,0 +1,1045 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2402E60A1521FB8900C86F6B /* DeezerItemConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2402E6081521FB8900C86F6B /* DeezerItemConnectionViewController.m */; };
+		2402E60B1521FB8900C86F6B /* DeezerItemConnectionViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2402E6091521FB8900C86F6B /* DeezerItemConnectionViewController_iPhone.xib */; };
+		2402E60D1521FB9E00C86F6B /* DeezerItemConnectionViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2402E60C1521FB9E00C86F6B /* DeezerItemConnectionViewController_iPad.xib */; };
+		2404ED5614E52B3B0017D9A5 /* DeezerPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 2404ED5514E52B3A0017D9A5 /* DeezerPermission.m */; };
+		24077BE71512256500B0EDC1 /* DeezerURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 24077BE61512256500B0EDC1 /* DeezerURL.m */; };
+		24077BEA15122C7700B0EDC1 /* DeezerItemConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24077BE915122C7700B0EDC1 /* DeezerItemConnection.m */; };
+		2407F4AA14F2893F0063ED1F /* AudioPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2407F4A814F2893F0063ED1F /* AudioPlayerController.m */; };
+		2407F4AB14F2893F0063ED1F /* AudioPlayerController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2407F4A914F2893F0063ED1F /* AudioPlayerController_iPad.xib */; };
+		2407F4AD14F289840063ED1F /* AudioPlayerController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2407F4AC14F289840063ED1F /* AudioPlayerController_iPhone.xib */; };
+		240ADDDC1525FD6C00C13049 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE7421C14F91F8D008E0632 /* AVFoundation.framework */; };
+		240ADDE91525FDFD00C13049 /* DeezerLibClose.png in Resources */ = {isa = PBXBuildFile; fileRef = 240ADDE61525FDFD00C13049 /* DeezerLibClose.png */; };
+		240ADDEA1525FDFD00C13049 /* DeezerLibClose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 240ADDE71525FDFD00C13049 /* DeezerLibClose@2x.png */; };
+		240ADDEE1526004300C13049 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 240ADDEF1526004300C13049 /* first.png */; };
+		240B1AFA150F8E1400F3D9D4 /* DeezerItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 240B1AF8150F8E1400F3D9D4 /* DeezerItemViewController.m */; };
+		240B1AFB150F8E1400F3D9D4 /* DeezerItemViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 240B1AF9150F8E1400F3D9D4 /* DeezerItemViewController_iPhone.xib */; };
+		240B1AFF150F8E4000F3D9D4 /* DeezerItemViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 240B1AFE150F8E4000F3D9D4 /* DeezerItemViewController_iPad.xib */; };
+		240F2E4E152EEECF00CF4F8E /* PostActionsItemConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 240F2E4D152EEECF00CF4F8E /* PostActionsItemConnectionViewController.m */; };
+		240F2E52152EEEF600CF4F8E /* PostActionsItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 240F2E51152EEEF600CF4F8E /* PostActionsItemViewController.m */; };
+		2448792B14F7F20900FBB256 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2448792814F7F20800FBB256 /* Icon-72.png */; };
+		2448792C14F7F20900FBB256 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2448792914F7F20900FBB256 /* Icon.png */; };
+		2448792D14F7F20900FBB256 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2448792A14F7F20900FBB256 /* Icon@2x.png */; };
+		2448793314F7F56600FBB256 /* DeezerSessionViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2448793214F7F56600FBB256 /* DeezerSessionViewController_iPhone.xib */; };
+		246245B215519B2C00D01738 /* libDeezer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 246245A915519AA600D01738 /* libDeezer.a */; };
+		247B468C14C978D100254CC1 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 247B468614C978D000254CC1 /* first@2x.png */; };
+		247B468D14C978D100254CC1 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 247B468714C978D000254CC1 /* second.png */; };
+		247B468E14C978D100254CC1 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 247B468814C978D000254CC1 /* second@2x.png */; };
+		24834B5914E553BA00B02232 /* DictionaryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 24834B5814E553BA00B02232 /* DictionaryParser.m */; };
+		24834B5D14E559D400B02232 /* defaultAvatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24834B5B14E559D400B02232 /* defaultAvatar.jpg */; };
+		24834B5E14E559D400B02232 /* defaultCover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24834B5C14E559D400B02232 /* defaultCover.jpg */; };
+		2488B84415515B8F005F866D /* RadioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2488B84215515B8F005F866D /* RadioPlayerViewController.m */; };
+		2488B84515515B8F005F866D /* RadioPlayerViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2488B84315515B8F005F866D /* RadioPlayerViewController_iPhone.xib */; };
+		2488B84715515BAC005F866D /* RadioPlayerViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2488B84615515BAC005F866D /* RadioPlayerViewController_iPad.xib */; };
+		249B5D5E14C835B8003ED238 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249B5D5D14C835B8003ED238 /* UIKit.framework */; };
+		249B5D6014C835B8003ED238 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249B5D5F14C835B8003ED238 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		249B5D6214C835B8003ED238 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249B5D6114C835B8003ED238 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		249B5D6814C835B8003ED238 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 249B5D6614C835B8003ED238 /* InfoPlist.strings */; };
+		249B5D6A14C835B8003ED238 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5D6914C835B8003ED238 /* main.m */; };
+		249B5D6E14C835B8003ED238 /* DeezerSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5D6D14C835B8003ED238 /* DeezerSampleAppDelegate.m */; };
+		249B5D8814C835B8003ED238 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249B5D8714C835B8003ED238 /* SenTestingKit.framework */; };
+		249B5D8914C835B8003ED238 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249B5D5D14C835B8003ED238 /* UIKit.framework */; };
+		249B5D8A14C835B8003ED238 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249B5D5F14C835B8003ED238 /* Foundation.framework */; };
+		249B5D9214C835B8003ED238 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 249B5D9014C835B8003ED238 /* InfoPlist.strings */; };
+		249B5D9514C835B8003ED238 /* DeezerSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5D9414C835B8003ED238 /* DeezerSampleTests.m */; };
+		249B5DAC14C8522C003ED238 /* DeezerSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5DAA14C8522C003ED238 /* DeezerSessionViewController.m */; };
+		249B5DAD14C8522C003ED238 /* DeezerSessionViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249B5DAB14C8522C003ED238 /* DeezerSessionViewController_iPad.xib */; };
+		249B5DB114C85271003ED238 /* DeezerUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5DB014C85271003ED238 /* DeezerUser.m */; };
+		249B5DB414C85286003ED238 /* DeezerTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5DB314C85286003ED238 /* DeezerTrack.m */; };
+		249B5DB714C85F80003ED238 /* DeezerAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5DB614C85F80003ED238 /* DeezerAlbum.m */; };
+		249B5DBA14C85F8E003ED238 /* DeezerArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5DB914C85F8E003ED238 /* DeezerArtist.m */; };
+		249B5DBD14C863BB003ED238 /* DeezerRadio.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5DBC14C863BB003ED238 /* DeezerRadio.m */; };
+		249B5DC014C86537003ED238 /* DeezerPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5DBF14C86537003ED238 /* DeezerPlaylist.m */; };
+		249B5DC314C8678C003ED238 /* DeezerFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5DC214C8678B003ED238 /* DeezerFolder.m */; };
+		249B5DC614C86890003ED238 /* DeezerEditorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5DC514C86890003ED238 /* DeezerEditorial.m */; };
+		249B5DC914C86971003ED238 /* DeezerComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5DC814C86970003ED238 /* DeezerComment.m */; };
+		249B5DCC14C87367003ED238 /* DeezerSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5DCB14C87367003ED238 /* DeezerSession.m */; };
+		249B5DDB14C87E65003ED238 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 249B5DDA14C87E65003ED238 /* JSONKit.m */; };
+		24AC916E14D6EEF20086D078 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AC915A14D6EEF20086D078 /* AFHTTPClient.m */; };
+		24AC916F14D6EEF20086D078 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AC915C14D6EEF20086D078 /* AFHTTPRequestOperation.m */; };
+		24AC917014D6EEF20086D078 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AC915E14D6EEF20086D078 /* AFImageRequestOperation.m */; };
+		24AC917114D6EEF20086D078 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AC916014D6EEF20086D078 /* AFJSONRequestOperation.m */; };
+		24AC917214D6EEF20086D078 /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AC916214D6EEF20086D078 /* AFJSONUtilities.m */; };
+		24AC917314D6EEF20086D078 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AC916414D6EEF20086D078 /* AFNetworkActivityIndicatorManager.m */; };
+		24AC917414D6EEF20086D078 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AC916714D6EEF20086D078 /* AFPropertyListRequestOperation.m */; };
+		24AC917514D6EEF20086D078 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AC916914D6EEF20086D078 /* AFURLConnectionOperation.m */; };
+		24AC917614D6EEF20086D078 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AC916B14D6EEF20086D078 /* AFXMLRequestOperation.m */; };
+		24AC917714D6EEF20086D078 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AC916D14D6EEF20086D078 /* UIImageView+AFNetworking.m */; };
+		24C73D8B14FE379900ADEE6C /* SearchViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C73D8A14FE379900ADEE6C /* SearchViewController_iPad.xib */; };
+		24C73D8F14FE37B900ADEE6C /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C73D8D14FE37B900ADEE6C /* SearchViewController.m */; };
+		24C73D9014FE37B900ADEE6C /* SearchViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C73D8E14FE37B900ADEE6C /* SearchViewController_iPhone.xib */; };
+		24DC0141152D9EA60077B7A7 /* PostActionsSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DC0140152D9EA60077B7A7 /* PostActionsSearchViewController.m */; };
+		24DC0158152DF8DF0077B7A7 /* DeleteActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DC0156152DF8DF0077B7A7 /* DeleteActionsViewController.m */; };
+		24DC0159152DF8DF0077B7A7 /* DeleteActionsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DC0157152DF8DF0077B7A7 /* DeleteActionsViewController_iPhone.xib */; };
+		24DC015B152DF8FC0077B7A7 /* DeleteActionsViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DC015A152DF8FC0077B7A7 /* DeleteActionsViewController_iPad.xib */; };
+		24DC015E152DFFF20077B7A7 /* DeleteItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DC015D152DFFF20077B7A7 /* DeleteItemViewController.m */; };
+		24DC0161152E01660077B7A7 /* DeleteItemConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DC0160152E01660077B7A7 /* DeleteItemConnectionViewController.m */; };
+		24F0819B152A04CE0067F2AD /* GlobalRequestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F08199152A04CE0067F2AD /* GlobalRequestsViewController.m */; };
+		24F0819C152A04CE0067F2AD /* GlobalRequestsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F0819A152A04CE0067F2AD /* GlobalRequestsViewController_iPhone.xib */; };
+		24F0819E152A05090067F2AD /* GlobalRequestsViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F0819D152A05090067F2AD /* GlobalRequestsViewController_iPad.xib */; };
+		24FF07AE152CA47A00618ED6 /* PostActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FF07AC152CA47A00618ED6 /* PostActionsViewController.m */; };
+		24FF07AF152CA47A00618ED6 /* PostActionsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FF07AD152CA47A00618ED6 /* PostActionsViewController_iPhone.xib */; };
+		24FF07B2152CA4AD00618ED6 /* PostActionsViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FF07B1152CA4AD00618ED6 /* PostActionsViewController_iPad.xib */; };
+		24FF37B414E425B0006688FF /* DeezerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FF37B314E425B0006688FF /* DeezerItem.m */; };
+		5C05AEE614D3197B00319B5C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C05AEE514D3197A00319B5C /* SystemConfiguration.framework */; };
+		5C05AEFB14D946A700319B5C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C05AEFA14D946A700319B5C /* AudioToolbox.framework */; };
+		5C68012914F5624E008B220A /* DeezerAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C68012814F5624E008B220A /* DeezerAudioPlayer.m */; };
+		7DE7422E14F9482B008E0632 /* Player_Play_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE7421F14F947FB008E0632 /* Player_Play_Normal.png */; };
+		7DE7422F14F9482B008E0632 /* Player_ProgressSlider_DownloadProgress.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE7422014F947FD008E0632 /* Player_ProgressSlider_DownloadProgress.png */; };
+		7DE7423014F9482B008E0632 /* Player_Pause_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE7422114F947FF008E0632 /* Player_Pause_Highlighted.png */; };
+		7DE7423114F9482B008E0632 /* Player_Pause_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE7422214F94801008E0632 /* Player_Pause_Normal.png */; };
+		7DE7423314F9482B008E0632 /* RedButton_Background_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE7422414F94805008E0632 /* RedButton_Background_Highlighted.png */; };
+		7DE7423614F9482B008E0632 /* RedButton_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE7422714F94809008E0632 /* RedButton_Background.png */; };
+		7DE7423714F9482B008E0632 /* Player_ProgressSlider_PlayProgress.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE7422814F94814008E0632 /* Player_ProgressSlider_PlayProgress.png */; };
+		7DE7423814F9482B008E0632 /* Player_ProgressSlider_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE7422914F94822008E0632 /* Player_ProgressSlider_Background.png */; };
+		7DE7423B14F9482B008E0632 /* Player_Play_Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE7422C14F94826008E0632 /* Player_Play_Highlighted.png */; };
+		7DE7423C14F9482B008E0632 /* transparentImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE7422D14F9482A008E0632 /* transparentImage.png */; };
+		7DE7424114F954F6008E0632 /* PlayerAndBufferSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7423F14F954F5008E0632 /* PlayerAndBufferSlider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		249B5D8B14C835B8003ED238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 249B5D5014C835B8003ED238 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 249B5D5814C835B8003ED238;
+			remoteInfo = DeezerSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2402E6071521FB8900C86F6B /* DeezerItemConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerItemConnectionViewController.h; sourceTree = "<group>"; };
+		2402E6081521FB8900C86F6B /* DeezerItemConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerItemConnectionViewController.m; sourceTree = "<group>"; };
+		2402E6091521FB8900C86F6B /* DeezerItemConnectionViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeezerItemConnectionViewController_iPhone.xib; sourceTree = "<group>"; };
+		2402E60C1521FB9E00C86F6B /* DeezerItemConnectionViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeezerItemConnectionViewController_iPad.xib; sourceTree = "<group>"; };
+		2404ED5414E52B3A0017D9A5 /* DeezerPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerPermission.h; sourceTree = "<group>"; };
+		2404ED5514E52B3A0017D9A5 /* DeezerPermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerPermission.m; sourceTree = "<group>"; };
+		24077BE51512256500B0EDC1 /* DeezerURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerURL.h; sourceTree = "<group>"; };
+		24077BE61512256500B0EDC1 /* DeezerURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerURL.m; sourceTree = "<group>"; };
+		24077BE815122C7700B0EDC1 /* DeezerItemConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerItemConnection.h; sourceTree = "<group>"; };
+		24077BE915122C7700B0EDC1 /* DeezerItemConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerItemConnection.m; sourceTree = "<group>"; };
+		2407F4A714F2893F0063ED1F /* AudioPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerController.h; sourceTree = "<group>"; };
+		2407F4A814F2893F0063ED1F /* AudioPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerController.m; sourceTree = "<group>"; };
+		2407F4A914F2893F0063ED1F /* AudioPlayerController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioPlayerController_iPad.xib; sourceTree = "<group>"; };
+		2407F4AC14F289840063ED1F /* AudioPlayerController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioPlayerController_iPhone.xib; sourceTree = "<group>"; };
+		240ADDE61525FDFD00C13049 /* DeezerLibClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DeezerLibClose.png; sourceTree = "<group>"; };
+		240ADDE71525FDFD00C13049 /* DeezerLibClose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DeezerLibClose@2x.png"; sourceTree = "<group>"; };
+		240ADDEF1526004300C13049 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		240B1AF7150F8E1400F3D9D4 /* DeezerItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerItemViewController.h; sourceTree = "<group>"; };
+		240B1AF8150F8E1400F3D9D4 /* DeezerItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerItemViewController.m; sourceTree = "<group>"; };
+		240B1AF9150F8E1400F3D9D4 /* DeezerItemViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeezerItemViewController_iPhone.xib; sourceTree = "<group>"; };
+		240B1AFE150F8E4000F3D9D4 /* DeezerItemViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeezerItemViewController_iPad.xib; sourceTree = "<group>"; };
+		240F2E4C152EEECF00CF4F8E /* PostActionsItemConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostActionsItemConnectionViewController.h; sourceTree = "<group>"; };
+		240F2E4D152EEECF00CF4F8E /* PostActionsItemConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostActionsItemConnectionViewController.m; sourceTree = "<group>"; };
+		240F2E50152EEEF600CF4F8E /* PostActionsItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostActionsItemViewController.h; sourceTree = "<group>"; };
+		240F2E51152EEEF600CF4F8E /* PostActionsItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostActionsItemViewController.m; sourceTree = "<group>"; };
+		2448792814F7F20800FBB256 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		2448792914F7F20900FBB256 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		2448792A14F7F20900FBB256 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		2448793214F7F56600FBB256 /* DeezerSessionViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeezerSessionViewController_iPhone.xib; sourceTree = "<group>"; };
+		246245A915519AA600D01738 /* libDeezer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDeezer.a; sourceTree = "<group>"; };
+		246245AC15519AB000D01738 /* BufferDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BufferDelegate.h; sourceTree = "<group>"; };
+		246245AD15519AB000D01738 /* DeezerConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerConnect.h; sourceTree = "<group>"; };
+		246245AF15519AB000D01738 /* DeezerRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerRequestDelegate.h; sourceTree = "<group>"; };
+		246245B015519AB000D01738 /* PlayerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDelegate.h; sourceTree = "<group>"; };
+		246245B115519AB000D01738 /* PlayerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerFactory.h; sourceTree = "<group>"; };
+		247B468614C978D000254CC1 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		247B468714C978D000254CC1 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		247B468814C978D000254CC1 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		24834B5714E553BA00B02232 /* DictionaryParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryParser.h; sourceTree = "<group>"; };
+		24834B5814E553BA00B02232 /* DictionaryParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryParser.m; sourceTree = "<group>"; };
+		24834B5B14E559D400B02232 /* defaultAvatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultAvatar.jpg; sourceTree = "<group>"; };
+		24834B5C14E559D400B02232 /* defaultCover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultCover.jpg; sourceTree = "<group>"; };
+		2488B84115515B8F005F866D /* RadioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioPlayerViewController.h; sourceTree = "<group>"; };
+		2488B84215515B8F005F866D /* RadioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioPlayerViewController.m; sourceTree = "<group>"; };
+		2488B84315515B8F005F866D /* RadioPlayerViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioPlayerViewController_iPhone.xib; sourceTree = "<group>"; };
+		2488B84615515BAC005F866D /* RadioPlayerViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioPlayerViewController_iPad.xib; sourceTree = "<group>"; };
+		249B5D5914C835B8003ED238 /* DeezerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeezerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		249B5D5D14C835B8003ED238 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		249B5D5F14C835B8003ED238 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		249B5D6114C835B8003ED238 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		249B5D6514C835B8003ED238 /* DeezerSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeezerSample-Info.plist"; sourceTree = "<group>"; };
+		249B5D6714C835B8003ED238 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		249B5D6914C835B8003ED238 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		249B5D6B14C835B8003ED238 /* DeezerSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeezerSample-Prefix.pch"; sourceTree = "<group>"; };
+		249B5D6C14C835B8003ED238 /* DeezerSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeezerSampleAppDelegate.h; sourceTree = "<group>"; };
+		249B5D6D14C835B8003ED238 /* DeezerSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeezerSampleAppDelegate.m; sourceTree = "<group>"; };
+		249B5D8614C835B8003ED238 /* DeezerSampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeezerSampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		249B5D8714C835B8003ED238 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		249B5D8F14C835B8003ED238 /* DeezerSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeezerSampleTests-Info.plist"; sourceTree = "<group>"; };
+		249B5D9114C835B8003ED238 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		249B5D9314C835B8003ED238 /* DeezerSampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeezerSampleTests.h; sourceTree = "<group>"; };
+		249B5D9414C835B8003ED238 /* DeezerSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeezerSampleTests.m; sourceTree = "<group>"; };
+		249B5DA914C8522C003ED238 /* DeezerSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerSessionViewController.h; sourceTree = "<group>"; };
+		249B5DAA14C8522C003ED238 /* DeezerSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerSessionViewController.m; sourceTree = "<group>"; };
+		249B5DAB14C8522C003ED238 /* DeezerSessionViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeezerSessionViewController_iPad.xib; sourceTree = "<group>"; };
+		249B5DAF14C85271003ED238 /* DeezerUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerUser.h; sourceTree = "<group>"; };
+		249B5DB014C85271003ED238 /* DeezerUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerUser.m; sourceTree = "<group>"; };
+		249B5DB214C85286003ED238 /* DeezerTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerTrack.h; sourceTree = "<group>"; };
+		249B5DB314C85286003ED238 /* DeezerTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerTrack.m; sourceTree = "<group>"; };
+		249B5DB514C85F80003ED238 /* DeezerAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerAlbum.h; sourceTree = "<group>"; };
+		249B5DB614C85F80003ED238 /* DeezerAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerAlbum.m; sourceTree = "<group>"; };
+		249B5DB814C85F8D003ED238 /* DeezerArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerArtist.h; sourceTree = "<group>"; };
+		249B5DB914C85F8E003ED238 /* DeezerArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerArtist.m; sourceTree = "<group>"; };
+		249B5DBB14C863BB003ED238 /* DeezerRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerRadio.h; sourceTree = "<group>"; };
+		249B5DBC14C863BB003ED238 /* DeezerRadio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerRadio.m; sourceTree = "<group>"; };
+		249B5DBE14C86537003ED238 /* DeezerPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerPlaylist.h; sourceTree = "<group>"; };
+		249B5DBF14C86537003ED238 /* DeezerPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerPlaylist.m; sourceTree = "<group>"; };
+		249B5DC114C8678B003ED238 /* DeezerFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerFolder.h; sourceTree = "<group>"; };
+		249B5DC214C8678B003ED238 /* DeezerFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerFolder.m; sourceTree = "<group>"; };
+		249B5DC414C86890003ED238 /* DeezerEditorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerEditorial.h; sourceTree = "<group>"; };
+		249B5DC514C86890003ED238 /* DeezerEditorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerEditorial.m; sourceTree = "<group>"; };
+		249B5DC714C86970003ED238 /* DeezerComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerComment.h; sourceTree = "<group>"; };
+		249B5DC814C86970003ED238 /* DeezerComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerComment.m; sourceTree = "<group>"; };
+		249B5DCA14C87366003ED238 /* DeezerSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerSession.h; sourceTree = "<group>"; };
+		249B5DCB14C87367003ED238 /* DeezerSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerSession.m; sourceTree = "<group>"; };
+		249B5DD914C87E65003ED238 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		249B5DDA14C87E65003ED238 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		24AC915914D6EEF20086D078 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		24AC915A14D6EEF20086D078 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		24AC915B14D6EEF20086D078 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		24AC915C14D6EEF20086D078 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		24AC915D14D6EEF20086D078 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		24AC915E14D6EEF20086D078 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		24AC915F14D6EEF20086D078 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		24AC916014D6EEF20086D078 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		24AC916114D6EEF20086D078 /* AFJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONUtilities.h; sourceTree = "<group>"; };
+		24AC916214D6EEF20086D078 /* AFJSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONUtilities.m; sourceTree = "<group>"; };
+		24AC916314D6EEF20086D078 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		24AC916414D6EEF20086D078 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		24AC916514D6EEF20086D078 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		24AC916614D6EEF20086D078 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		24AC916714D6EEF20086D078 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		24AC916814D6EEF20086D078 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		24AC916914D6EEF20086D078 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		24AC916A14D6EEF20086D078 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		24AC916B14D6EEF20086D078 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		24AC916C14D6EEF20086D078 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		24AC916D14D6EEF20086D078 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		24C73D8A14FE379900ADEE6C /* SearchViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController_iPad.xib; sourceTree = "<group>"; };
+		24C73D8C14FE37B900ADEE6C /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		24C73D8D14FE37B900ADEE6C /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		24C73D8E14FE37B900ADEE6C /* SearchViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController_iPhone.xib; sourceTree = "<group>"; };
+		24DC013F152D9EA60077B7A7 /* PostActionsSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostActionsSearchViewController.h; sourceTree = "<group>"; };
+		24DC0140152D9EA60077B7A7 /* PostActionsSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostActionsSearchViewController.m; sourceTree = "<group>"; };
+		24DC0155152DF8DF0077B7A7 /* DeleteActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteActionsViewController.h; sourceTree = "<group>"; };
+		24DC0156152DF8DF0077B7A7 /* DeleteActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteActionsViewController.m; sourceTree = "<group>"; };
+		24DC0157152DF8DF0077B7A7 /* DeleteActionsViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteActionsViewController_iPhone.xib; sourceTree = "<group>"; };
+		24DC015A152DF8FC0077B7A7 /* DeleteActionsViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteActionsViewController_iPad.xib; sourceTree = "<group>"; };
+		24DC015C152DFFF20077B7A7 /* DeleteItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteItemViewController.h; sourceTree = "<group>"; };
+		24DC015D152DFFF20077B7A7 /* DeleteItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteItemViewController.m; sourceTree = "<group>"; };
+		24DC015F152E01660077B7A7 /* DeleteItemConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteItemConnectionViewController.h; sourceTree = "<group>"; };
+		24DC0160152E01660077B7A7 /* DeleteItemConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteItemConnectionViewController.m; sourceTree = "<group>"; };
+		24F08198152A04CE0067F2AD /* GlobalRequestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalRequestsViewController.h; sourceTree = "<group>"; };
+		24F08199152A04CE0067F2AD /* GlobalRequestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalRequestsViewController.m; sourceTree = "<group>"; };
+		24F0819A152A04CE0067F2AD /* GlobalRequestsViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlobalRequestsViewController_iPhone.xib; sourceTree = "<group>"; };
+		24F0819D152A05090067F2AD /* GlobalRequestsViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlobalRequestsViewController_iPad.xib; sourceTree = "<group>"; };
+		24FF07AB152CA47A00618ED6 /* PostActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostActionsViewController.h; sourceTree = "<group>"; };
+		24FF07AC152CA47A00618ED6 /* PostActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostActionsViewController.m; sourceTree = "<group>"; };
+		24FF07AD152CA47A00618ED6 /* PostActionsViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostActionsViewController_iPhone.xib; sourceTree = "<group>"; };
+		24FF07B1152CA4AD00618ED6 /* PostActionsViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostActionsViewController_iPad.xib; sourceTree = "<group>"; };
+		24FF37B214E425B0006688FF /* DeezerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerItem.h; sourceTree = "<group>"; };
+		24FF37B314E425B0006688FF /* DeezerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerItem.m; sourceTree = "<group>"; };
+		5C05AEE514D3197A00319B5C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5C05AEFA14D946A700319B5C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5C68012714F5624E008B220A /* DeezerAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerAudioPlayer.h; sourceTree = "<group>"; };
+		5C68012814F5624E008B220A /* DeezerAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeezerAudioPlayer.m; sourceTree = "<group>"; };
+		7DE7421C14F91F8D008E0632 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7DE7421F14F947FB008E0632 /* Player_Play_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_Play_Normal.png; sourceTree = "<group>"; };
+		7DE7422014F947FD008E0632 /* Player_ProgressSlider_DownloadProgress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_ProgressSlider_DownloadProgress.png; sourceTree = "<group>"; };
+		7DE7422114F947FF008E0632 /* Player_Pause_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_Pause_Highlighted.png; sourceTree = "<group>"; };
+		7DE7422214F94801008E0632 /* Player_Pause_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_Pause_Normal.png; sourceTree = "<group>"; };
+		7DE7422414F94805008E0632 /* RedButton_Background_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedButton_Background_Highlighted.png; sourceTree = "<group>"; };
+		7DE7422714F94809008E0632 /* RedButton_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedButton_Background.png; sourceTree = "<group>"; };
+		7DE7422814F94814008E0632 /* Player_ProgressSlider_PlayProgress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_ProgressSlider_PlayProgress.png; sourceTree = "<group>"; };
+		7DE7422914F94822008E0632 /* Player_ProgressSlider_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_ProgressSlider_Background.png; sourceTree = "<group>"; };
+		7DE7422C14F94826008E0632 /* Player_Play_Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player_Play_Highlighted.png; sourceTree = "<group>"; };
+		7DE7422D14F9482A008E0632 /* transparentImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentImage.png; sourceTree = "<group>"; };
+		7DE7423F14F954F5008E0632 /* PlayerAndBufferSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerAndBufferSlider.m; sourceTree = "<group>"; };
+		7DE7424014F954F6008E0632 /* PlayerAndBufferSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerAndBufferSlider.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		249B5D5614C835B8003ED238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246245B215519B2C00D01738 /* libDeezer.a in Frameworks */,
+				240ADDDC1525FD6C00C13049 /* AVFoundation.framework in Frameworks */,
+				5C05AEFB14D946A700319B5C /* AudioToolbox.framework in Frameworks */,
+				5C05AEE614D3197B00319B5C /* SystemConfiguration.framework in Frameworks */,
+				249B5D5E14C835B8003ED238 /* UIKit.framework in Frameworks */,
+				249B5D6014C835B8003ED238 /* Foundation.framework in Frameworks */,
+				249B5D6214C835B8003ED238 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		249B5D8214C835B8003ED238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249B5D8814C835B8003ED238 /* SenTestingKit.framework in Frameworks */,
+				249B5D8914C835B8003ED238 /* UIKit.framework in Frameworks */,
+				249B5D8A14C835B8003ED238 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2402E6061521FB6100C86F6B /* DeezerItemConnectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2402E6071521FB8900C86F6B /* DeezerItemConnectionViewController.h */,
+				2402E6081521FB8900C86F6B /* DeezerItemConnectionViewController.m */,
+				2402E6091521FB8900C86F6B /* DeezerItemConnectionViewController_iPhone.xib */,
+				2402E60C1521FB9E00C86F6B /* DeezerItemConnectionViewController_iPad.xib */,
+			);
+			name = DeezerItemConnectionViewController;
+			sourceTree = "<group>";
+		};
+		2407F4A614F2890E0063ED1F /* AudioPlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				2407F4A714F2893F0063ED1F /* AudioPlayerController.h */,
+				2407F4A814F2893F0063ED1F /* AudioPlayerController.m */,
+				2407F4AC14F289840063ED1F /* AudioPlayerController_iPhone.xib */,
+				2407F4A914F2893F0063ED1F /* AudioPlayerController_iPad.xib */,
+			);
+			name = AudioPlayerController;
+			sourceTree = "<group>";
+		};
+		240968CC1529AC1F009C7EC9 /* ThridParty */ = {
+			isa = PBXGroup;
+			children = (
+				249B5DD414C87E05003ED238 /* JSONKit */,
+				24AC915814D6EEF20086D078 /* AFNetworking */,
+			);
+			name = ThridParty;
+			sourceTree = "<group>";
+		};
+		240ADDBA1525D38300C13049 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2448792814F7F20800FBB256 /* Icon-72.png */,
+				2448792914F7F20900FBB256 /* Icon.png */,
+				2448792A14F7F20900FBB256 /* Icon@2x.png */,
+				240ADDEF1526004300C13049 /* first.png */,
+				247B468614C978D000254CC1 /* first@2x.png */,
+				247B468714C978D000254CC1 /* second.png */,
+				247B468814C978D000254CC1 /* second@2x.png */,
+				24834B5B14E559D400B02232 /* defaultAvatar.jpg */,
+				24834B5C14E559D400B02232 /* defaultCover.jpg */,
+				7DE7422414F94805008E0632 /* RedButton_Background_Highlighted.png */,
+				7DE7422714F94809008E0632 /* RedButton_Background.png */,
+				7DE7421F14F947FB008E0632 /* Player_Play_Normal.png */,
+				7DE7422C14F94826008E0632 /* Player_Play_Highlighted.png */,
+				7DE7422214F94801008E0632 /* Player_Pause_Normal.png */,
+				7DE7422114F947FF008E0632 /* Player_Pause_Highlighted.png */,
+				7DE7422914F94822008E0632 /* Player_ProgressSlider_Background.png */,
+				7DE7422014F947FD008E0632 /* Player_ProgressSlider_DownloadProgress.png */,
+				7DE7422814F94814008E0632 /* Player_ProgressSlider_PlayProgress.png */,
+				7DE7422D14F9482A008E0632 /* transparentImage.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		240ADDDD1525FDFB00C13049 /* LibDeezer */ = {
+			isa = PBXGroup;
+			children = (
+				246245AB15519AB000D01738 /* Headers */,
+				246245A915519AA600D01738 /* libDeezer.a */,
+				240ADDE51525FDFD00C13049 /* Resources */,
+			);
+			name = LibDeezer;
+			path = DeezerSample/LibDeezer;
+			sourceTree = "<group>";
+		};
+		240ADDE51525FDFD00C13049 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				240ADDE61525FDFD00C13049 /* DeezerLibClose.png */,
+				240ADDE71525FDFD00C13049 /* DeezerLibClose@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		240B1AF5150F8DF800F3D9D4 /* DeezerItemViewController */ = {
+			isa = PBXGroup;
+			children = (
+				240B1AF7150F8E1400F3D9D4 /* DeezerItemViewController.h */,
+				240B1AF8150F8E1400F3D9D4 /* DeezerItemViewController.m */,
+				240B1AF9150F8E1400F3D9D4 /* DeezerItemViewController_iPhone.xib */,
+				240B1AFE150F8E4000F3D9D4 /* DeezerItemViewController_iPad.xib */,
+			);
+			name = DeezerItemViewController;
+			sourceTree = "<group>";
+		};
+		246245AB15519AB000D01738 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				246245AC15519AB000D01738 /* BufferDelegate.h */,
+				246245AD15519AB000D01738 /* DeezerConnect.h */,
+				246245AF15519AB000D01738 /* DeezerRequestDelegate.h */,
+				246245B015519AB000D01738 /* PlayerDelegate.h */,
+				246245B115519AB000D01738 /* PlayerFactory.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		2488B84015515B61005F866D /* RadioPlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				2488B84115515B8F005F866D /* RadioPlayerViewController.h */,
+				2488B84215515B8F005F866D /* RadioPlayerViewController.m */,
+				2488B84315515B8F005F866D /* RadioPlayerViewController_iPhone.xib */,
+				2488B84615515BAC005F866D /* RadioPlayerViewController_iPad.xib */,
+			);
+			name = RadioPlayerController;
+			sourceTree = "<group>";
+		};
+		249B5D4E14C835B8003ED238 = {
+			isa = PBXGroup;
+			children = (
+				240ADDDD1525FDFB00C13049 /* LibDeezer */,
+				249B5D6314C835B8003ED238 /* DeezerSample */,
+				249B5D8D14C835B8003ED238 /* DeezerSampleTests */,
+				249B5D5C14C835B8003ED238 /* Frameworks */,
+				249B5D5A14C835B8003ED238 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		249B5D5A14C835B8003ED238 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				249B5D5914C835B8003ED238 /* DeezerSample.app */,
+				249B5D8614C835B8003ED238 /* DeezerSampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		249B5D5C14C835B8003ED238 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DE7421C14F91F8D008E0632 /* AVFoundation.framework */,
+				5C05AEFA14D946A700319B5C /* AudioToolbox.framework */,
+				5C05AEE514D3197A00319B5C /* SystemConfiguration.framework */,
+				249B5D5D14C835B8003ED238 /* UIKit.framework */,
+				249B5D5F14C835B8003ED238 /* Foundation.framework */,
+				249B5D6114C835B8003ED238 /* CoreGraphics.framework */,
+				249B5D8714C835B8003ED238 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		249B5D6314C835B8003ED238 /* DeezerSample */ = {
+			isa = PBXGroup;
+			children = (
+				249B5D6C14C835B8003ED238 /* DeezerSampleAppDelegate.h */,
+				249B5D6D14C835B8003ED238 /* DeezerSampleAppDelegate.m */,
+				249B5DCA14C87366003ED238 /* DeezerSession.h */,
+				249B5DCB14C87367003ED238 /* DeezerSession.m */,
+				5C68012714F5624E008B220A /* DeezerAudioPlayer.h */,
+				5C68012814F5624E008B220A /* DeezerAudioPlayer.m */,
+				24834B5714E553BA00B02232 /* DictionaryParser.h */,
+				24834B5814E553BA00B02232 /* DictionaryParser.m */,
+				7DE7424014F954F6008E0632 /* PlayerAndBufferSlider.h */,
+				7DE7423F14F954F5008E0632 /* PlayerAndBufferSlider.m */,
+				249B5DAE14C8525C003ED238 /* DeezerItems */,
+				249B5DA814C851FD003ED238 /* ViewControllers */,
+				240ADDBA1525D38300C13049 /* Resources */,
+				240968CC1529AC1F009C7EC9 /* ThridParty */,
+				249B5D6414C835B8003ED238 /* Supporting Files */,
+			);
+			path = DeezerSample;
+			sourceTree = "<group>";
+		};
+		249B5D6414C835B8003ED238 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				249B5D6514C835B8003ED238 /* DeezerSample-Info.plist */,
+				249B5D6614C835B8003ED238 /* InfoPlist.strings */,
+				249B5D6914C835B8003ED238 /* main.m */,
+				249B5D6B14C835B8003ED238 /* DeezerSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		249B5D8D14C835B8003ED238 /* DeezerSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				249B5D9314C835B8003ED238 /* DeezerSampleTests.h */,
+				249B5D9414C835B8003ED238 /* DeezerSampleTests.m */,
+				249B5D8E14C835B8003ED238 /* Supporting Files */,
+			);
+			path = DeezerSampleTests;
+			sourceTree = "<group>";
+		};
+		249B5D8E14C835B8003ED238 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				249B5D8F14C835B8003ED238 /* DeezerSampleTests-Info.plist */,
+				249B5D9014C835B8003ED238 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		249B5DA814C851FD003ED238 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				24FB8ABD14EA662700A6D4BB /* DeezerSessionViewController */,
+				24FF07A9152CA44B00618ED6 /* PostActionsViewController */,
+				24DC0154152DF8770077B7A7 /* DeleteActionsViewController */,
+				240B1AF5150F8DF800F3D9D4 /* DeezerItemViewController */,
+				2402E6061521FB6100C86F6B /* DeezerItemConnectionViewController */,
+				2407F4A614F2890E0063ED1F /* AudioPlayerController */,
+				2488B84015515B61005F866D /* RadioPlayerController */,
+				24F08197152A043A0067F2AD /* GlobalRequestsViewController */,
+				24C73D8314FE374600ADEE6C /* SearchViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		249B5DAE14C8525C003ED238 /* DeezerItems */ = {
+			isa = PBXGroup;
+			children = (
+				24FF37B214E425B0006688FF /* DeezerItem.h */,
+				24FF37B314E425B0006688FF /* DeezerItem.m */,
+				249B5DB514C85F80003ED238 /* DeezerAlbum.h */,
+				249B5DB614C85F80003ED238 /* DeezerAlbum.m */,
+				249B5DB814C85F8D003ED238 /* DeezerArtist.h */,
+				249B5DB914C85F8E003ED238 /* DeezerArtist.m */,
+				249B5DC714C86970003ED238 /* DeezerComment.h */,
+				249B5DC814C86970003ED238 /* DeezerComment.m */,
+				249B5DC414C86890003ED238 /* DeezerEditorial.h */,
+				249B5DC514C86890003ED238 /* DeezerEditorial.m */,
+				249B5DC114C8678B003ED238 /* DeezerFolder.h */,
+				249B5DC214C8678B003ED238 /* DeezerFolder.m */,
+				2404ED5414E52B3A0017D9A5 /* DeezerPermission.h */,
+				2404ED5514E52B3A0017D9A5 /* DeezerPermission.m */,
+				249B5DBE14C86537003ED238 /* DeezerPlaylist.h */,
+				249B5DBF14C86537003ED238 /* DeezerPlaylist.m */,
+				249B5DBB14C863BB003ED238 /* DeezerRadio.h */,
+				249B5DBC14C863BB003ED238 /* DeezerRadio.m */,
+				249B5DB214C85286003ED238 /* DeezerTrack.h */,
+				249B5DB314C85286003ED238 /* DeezerTrack.m */,
+				249B5DAF14C85271003ED238 /* DeezerUser.h */,
+				249B5DB014C85271003ED238 /* DeezerUser.m */,
+				24077BE51512256500B0EDC1 /* DeezerURL.h */,
+				24077BE61512256500B0EDC1 /* DeezerURL.m */,
+				24077BE815122C7700B0EDC1 /* DeezerItemConnection.h */,
+				24077BE915122C7700B0EDC1 /* DeezerItemConnection.m */,
+			);
+			name = DeezerItems;
+			sourceTree = "<group>";
+		};
+		249B5DD414C87E05003ED238 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				249B5DD914C87E65003ED238 /* JSONKit.h */,
+				249B5DDA14C87E65003ED238 /* JSONKit.m */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
+		24AC915814D6EEF20086D078 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				24AC915914D6EEF20086D078 /* AFHTTPClient.h */,
+				24AC915A14D6EEF20086D078 /* AFHTTPClient.m */,
+				24AC915B14D6EEF20086D078 /* AFHTTPRequestOperation.h */,
+				24AC915C14D6EEF20086D078 /* AFHTTPRequestOperation.m */,
+				24AC915D14D6EEF20086D078 /* AFImageRequestOperation.h */,
+				24AC915E14D6EEF20086D078 /* AFImageRequestOperation.m */,
+				24AC915F14D6EEF20086D078 /* AFJSONRequestOperation.h */,
+				24AC916014D6EEF20086D078 /* AFJSONRequestOperation.m */,
+				24AC916114D6EEF20086D078 /* AFJSONUtilities.h */,
+				24AC916214D6EEF20086D078 /* AFJSONUtilities.m */,
+				24AC916314D6EEF20086D078 /* AFNetworkActivityIndicatorManager.h */,
+				24AC916414D6EEF20086D078 /* AFNetworkActivityIndicatorManager.m */,
+				24AC916514D6EEF20086D078 /* AFNetworking.h */,
+				24AC916614D6EEF20086D078 /* AFPropertyListRequestOperation.h */,
+				24AC916714D6EEF20086D078 /* AFPropertyListRequestOperation.m */,
+				24AC916814D6EEF20086D078 /* AFURLConnectionOperation.h */,
+				24AC916914D6EEF20086D078 /* AFURLConnectionOperation.m */,
+				24AC916A14D6EEF20086D078 /* AFXMLRequestOperation.h */,
+				24AC916B14D6EEF20086D078 /* AFXMLRequestOperation.m */,
+				24AC916C14D6EEF20086D078 /* UIImageView+AFNetworking.h */,
+				24AC916D14D6EEF20086D078 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		24C73D8314FE374600ADEE6C /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24C73D8C14FE37B900ADEE6C /* SearchViewController.h */,
+				24C73D8D14FE37B900ADEE6C /* SearchViewController.m */,
+				24C73D8E14FE37B900ADEE6C /* SearchViewController_iPhone.xib */,
+				24C73D8A14FE379900ADEE6C /* SearchViewController_iPad.xib */,
+			);
+			name = SearchViewController;
+			sourceTree = "<group>";
+		};
+		24DC0154152DF8770077B7A7 /* DeleteActionsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24DC0155152DF8DF0077B7A7 /* DeleteActionsViewController.h */,
+				24DC0156152DF8DF0077B7A7 /* DeleteActionsViewController.m */,
+				24DC0157152DF8DF0077B7A7 /* DeleteActionsViewController_iPhone.xib */,
+				24DC015A152DF8FC0077B7A7 /* DeleteActionsViewController_iPad.xib */,
+				24DC015C152DFFF20077B7A7 /* DeleteItemViewController.h */,
+				24DC015D152DFFF20077B7A7 /* DeleteItemViewController.m */,
+				24DC015F152E01660077B7A7 /* DeleteItemConnectionViewController.h */,
+				24DC0160152E01660077B7A7 /* DeleteItemConnectionViewController.m */,
+			);
+			name = DeleteActionsViewController;
+			sourceTree = "<group>";
+		};
+		24F08197152A043A0067F2AD /* GlobalRequestsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24F08198152A04CE0067F2AD /* GlobalRequestsViewController.h */,
+				24F08199152A04CE0067F2AD /* GlobalRequestsViewController.m */,
+				24F0819A152A04CE0067F2AD /* GlobalRequestsViewController_iPhone.xib */,
+				24F0819D152A05090067F2AD /* GlobalRequestsViewController_iPad.xib */,
+			);
+			name = GlobalRequestsViewController;
+			sourceTree = "<group>";
+		};
+		24FB8ABD14EA662700A6D4BB /* DeezerSessionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				249B5DA914C8522C003ED238 /* DeezerSessionViewController.h */,
+				249B5DAA14C8522C003ED238 /* DeezerSessionViewController.m */,
+				2448793214F7F56600FBB256 /* DeezerSessionViewController_iPhone.xib */,
+				249B5DAB14C8522C003ED238 /* DeezerSessionViewController_iPad.xib */,
+			);
+			name = DeezerSessionViewController;
+			sourceTree = "<group>";
+		};
+		24FF07A9152CA44B00618ED6 /* PostActionsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24FF07AB152CA47A00618ED6 /* PostActionsViewController.h */,
+				24FF07AC152CA47A00618ED6 /* PostActionsViewController.m */,
+				24FF07AD152CA47A00618ED6 /* PostActionsViewController_iPhone.xib */,
+				24FF07B1152CA4AD00618ED6 /* PostActionsViewController_iPad.xib */,
+				24DC013F152D9EA60077B7A7 /* PostActionsSearchViewController.h */,
+				24DC0140152D9EA60077B7A7 /* PostActionsSearchViewController.m */,
+				240F2E50152EEEF600CF4F8E /* PostActionsItemViewController.h */,
+				240F2E51152EEEF600CF4F8E /* PostActionsItemViewController.m */,
+				240F2E4C152EEECF00CF4F8E /* PostActionsItemConnectionViewController.h */,
+				240F2E4D152EEECF00CF4F8E /* PostActionsItemConnectionViewController.m */,
+			);
+			name = PostActionsViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		249B5D5814C835B8003ED238 /* DeezerSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 249B5D9814C835B8003ED238 /* Build configuration list for PBXNativeTarget "DeezerSample" */;
+			buildPhases = (
+				249B5D5514C835B8003ED238 /* Sources */,
+				249B5D5614C835B8003ED238 /* Frameworks */,
+				249B5D5714C835B8003ED238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeezerSample;
+			productName = DeezerSample;
+			productReference = 249B5D5914C835B8003ED238 /* DeezerSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		249B5D8514C835B8003ED238 /* DeezerSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 249B5D9B14C835B8003ED238 /* Build configuration list for PBXNativeTarget "DeezerSampleTests" */;
+			buildPhases = (
+				249B5D8114C835B8003ED238 /* Sources */,
+				249B5D8214C835B8003ED238 /* Frameworks */,
+				249B5D8314C835B8003ED238 /* Resources */,
+				249B5D8414C835B8003ED238 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				249B5D8C14C835B8003ED238 /* PBXTargetDependency */,
+			);
+			name = DeezerSampleTests;
+			productName = DeezerSampleTests;
+			productReference = 249B5D8614C835B8003ED238 /* DeezerSampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		249B5D5014C835B8003ED238 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Deezer;
+			};
+			buildConfigurationList = 249B5D5314C835B8003ED238 /* Build configuration list for PBXProject "DeezerSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 249B5D4E14C835B8003ED238;
+			productRefGroup = 249B5D5A14C835B8003ED238 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				249B5D5814C835B8003ED238 /* DeezerSample */,
+				249B5D8514C835B8003ED238 /* DeezerSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		249B5D5714C835B8003ED238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249B5D6814C835B8003ED238 /* InfoPlist.strings in Resources */,
+				249B5DAD14C8522C003ED238 /* DeezerSessionViewController_iPad.xib in Resources */,
+				240ADDEE1526004300C13049 /* first.png in Resources */,
+				247B468C14C978D100254CC1 /* first@2x.png in Resources */,
+				247B468D14C978D100254CC1 /* second.png in Resources */,
+				247B468E14C978D100254CC1 /* second@2x.png in Resources */,
+				24834B5D14E559D400B02232 /* defaultAvatar.jpg in Resources */,
+				24834B5E14E559D400B02232 /* defaultCover.jpg in Resources */,
+				2407F4AB14F2893F0063ED1F /* AudioPlayerController_iPad.xib in Resources */,
+				2407F4AD14F289840063ED1F /* AudioPlayerController_iPhone.xib in Resources */,
+				2448792B14F7F20900FBB256 /* Icon-72.png in Resources */,
+				2448792C14F7F20900FBB256 /* Icon.png in Resources */,
+				2448792D14F7F20900FBB256 /* Icon@2x.png in Resources */,
+				2448793314F7F56600FBB256 /* DeezerSessionViewController_iPhone.xib in Resources */,
+				7DE7422E14F9482B008E0632 /* Player_Play_Normal.png in Resources */,
+				7DE7422F14F9482B008E0632 /* Player_ProgressSlider_DownloadProgress.png in Resources */,
+				7DE7423014F9482B008E0632 /* Player_Pause_Highlighted.png in Resources */,
+				7DE7423114F9482B008E0632 /* Player_Pause_Normal.png in Resources */,
+				7DE7423314F9482B008E0632 /* RedButton_Background_Highlighted.png in Resources */,
+				7DE7423614F9482B008E0632 /* RedButton_Background.png in Resources */,
+				7DE7423714F9482B008E0632 /* Player_ProgressSlider_PlayProgress.png in Resources */,
+				7DE7423814F9482B008E0632 /* Player_ProgressSlider_Background.png in Resources */,
+				7DE7423B14F9482B008E0632 /* Player_Play_Highlighted.png in Resources */,
+				7DE7423C14F9482B008E0632 /* transparentImage.png in Resources */,
+				24C73D8B14FE379900ADEE6C /* SearchViewController_iPad.xib in Resources */,
+				24C73D9014FE37B900ADEE6C /* SearchViewController_iPhone.xib in Resources */,
+				240B1AFB150F8E1400F3D9D4 /* DeezerItemViewController_iPhone.xib in Resources */,
+				240B1AFF150F8E4000F3D9D4 /* DeezerItemViewController_iPad.xib in Resources */,
+				2402E60B1521FB8900C86F6B /* DeezerItemConnectionViewController_iPhone.xib in Resources */,
+				2402E60D1521FB9E00C86F6B /* DeezerItemConnectionViewController_iPad.xib in Resources */,
+				240ADDE91525FDFD00C13049 /* DeezerLibClose.png in Resources */,
+				240ADDEA1525FDFD00C13049 /* DeezerLibClose@2x.png in Resources */,
+				24F0819C152A04CE0067F2AD /* GlobalRequestsViewController_iPhone.xib in Resources */,
+				24F0819E152A05090067F2AD /* GlobalRequestsViewController_iPad.xib in Resources */,
+				24FF07AF152CA47A00618ED6 /* PostActionsViewController_iPhone.xib in Resources */,
+				24FF07B2152CA4AD00618ED6 /* PostActionsViewController_iPad.xib in Resources */,
+				24DC0159152DF8DF0077B7A7 /* DeleteActionsViewController_iPhone.xib in Resources */,
+				24DC015B152DF8FC0077B7A7 /* DeleteActionsViewController_iPad.xib in Resources */,
+				2488B84515515B8F005F866D /* RadioPlayerViewController_iPhone.xib in Resources */,
+				2488B84715515BAC005F866D /* RadioPlayerViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		249B5D8314C835B8003ED238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249B5D9214C835B8003ED238 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		249B5D8414C835B8003ED238 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		249B5D5514C835B8003ED238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249B5D6A14C835B8003ED238 /* main.m in Sources */,
+				249B5D6E14C835B8003ED238 /* DeezerSampleAppDelegate.m in Sources */,
+				249B5DAC14C8522C003ED238 /* DeezerSessionViewController.m in Sources */,
+				249B5DB114C85271003ED238 /* DeezerUser.m in Sources */,
+				249B5DB414C85286003ED238 /* DeezerTrack.m in Sources */,
+				249B5DB714C85F80003ED238 /* DeezerAlbum.m in Sources */,
+				249B5DBA14C85F8E003ED238 /* DeezerArtist.m in Sources */,
+				249B5DBD14C863BB003ED238 /* DeezerRadio.m in Sources */,
+				249B5DC014C86537003ED238 /* DeezerPlaylist.m in Sources */,
+				249B5DC314C8678C003ED238 /* DeezerFolder.m in Sources */,
+				249B5DC614C86890003ED238 /* DeezerEditorial.m in Sources */,
+				249B5DC914C86971003ED238 /* DeezerComment.m in Sources */,
+				249B5DCC14C87367003ED238 /* DeezerSession.m in Sources */,
+				249B5DDB14C87E65003ED238 /* JSONKit.m in Sources */,
+				24AC916E14D6EEF20086D078 /* AFHTTPClient.m in Sources */,
+				24AC916F14D6EEF20086D078 /* AFHTTPRequestOperation.m in Sources */,
+				24AC917014D6EEF20086D078 /* AFImageRequestOperation.m in Sources */,
+				24AC917114D6EEF20086D078 /* AFJSONRequestOperation.m in Sources */,
+				24AC917214D6EEF20086D078 /* AFJSONUtilities.m in Sources */,
+				24AC917314D6EEF20086D078 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				24AC917414D6EEF20086D078 /* AFPropertyListRequestOperation.m in Sources */,
+				24AC917514D6EEF20086D078 /* AFURLConnectionOperation.m in Sources */,
+				24AC917614D6EEF20086D078 /* AFXMLRequestOperation.m in Sources */,
+				24AC917714D6EEF20086D078 /* UIImageView+AFNetworking.m in Sources */,
+				24FF37B414E425B0006688FF /* DeezerItem.m in Sources */,
+				2404ED5614E52B3B0017D9A5 /* DeezerPermission.m in Sources */,
+				24834B5914E553BA00B02232 /* DictionaryParser.m in Sources */,
+				2407F4AA14F2893F0063ED1F /* AudioPlayerController.m in Sources */,
+				5C68012914F5624E008B220A /* DeezerAudioPlayer.m in Sources */,
+				7DE7424114F954F6008E0632 /* PlayerAndBufferSlider.m in Sources */,
+				24C73D8F14FE37B900ADEE6C /* SearchViewController.m in Sources */,
+				240B1AFA150F8E1400F3D9D4 /* DeezerItemViewController.m in Sources */,
+				24077BE71512256500B0EDC1 /* DeezerURL.m in Sources */,
+				24077BEA15122C7700B0EDC1 /* DeezerItemConnection.m in Sources */,
+				2402E60A1521FB8900C86F6B /* DeezerItemConnectionViewController.m in Sources */,
+				24F0819B152A04CE0067F2AD /* GlobalRequestsViewController.m in Sources */,
+				24FF07AE152CA47A00618ED6 /* PostActionsViewController.m in Sources */,
+				24DC0141152D9EA60077B7A7 /* PostActionsSearchViewController.m in Sources */,
+				24DC0158152DF8DF0077B7A7 /* DeleteActionsViewController.m in Sources */,
+				24DC015E152DFFF20077B7A7 /* DeleteItemViewController.m in Sources */,
+				24DC0161152E01660077B7A7 /* DeleteItemConnectionViewController.m in Sources */,
+				240F2E4E152EEECF00CF4F8E /* PostActionsItemConnectionViewController.m in Sources */,
+				240F2E52152EEEF600CF4F8E /* PostActionsItemViewController.m in Sources */,
+				2488B84415515B8F005F866D /* RadioPlayerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		249B5D8114C835B8003ED238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249B5D9514C835B8003ED238 /* DeezerSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		249B5D8C14C835B8003ED238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 249B5D5814C835B8003ED238 /* DeezerSample */;
+			targetProxy = 249B5D8B14C835B8003ED238 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		249B5D6614C835B8003ED238 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				249B5D6714C835B8003ED238 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		249B5D9014C835B8003ED238 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				249B5D9114C835B8003ED238 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		249B5D9614C835B8003ED238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		249B5D9714C835B8003ED238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		249B5D9914C835B8003ED238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeezerSample/DeezerSample-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "DeezerSample/DeezerSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/DeezerSample/LibDeezer\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		249B5D9A14C835B8003ED238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeezerSample/DeezerSample-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "DeezerSample/DeezerSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/DeezerSample/LibDeezer\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		249B5D9C14C835B8003ED238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeezerSample.app/DeezerSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeezerSample/DeezerSample-Prefix.pch";
+				INFOPLIST_FILE = "DeezerSampleTests/DeezerSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		249B5D9D14C835B8003ED238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeezerSample.app/DeezerSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DeezerSample/DeezerSample-Prefix.pch";
+				INFOPLIST_FILE = "DeezerSampleTests/DeezerSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		249B5D5314C835B8003ED238 /* Build configuration list for PBXProject "DeezerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				249B5D9614C835B8003ED238 /* Debug */,
+				249B5D9714C835B8003ED238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		249B5D9814C835B8003ED238 /* Build configuration list for PBXNativeTarget "DeezerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				249B5D9914C835B8003ED238 /* Debug */,
+				249B5D9A14C835B8003ED238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		249B5D9B14C835B8003ED238 /* Build configuration list for PBXNativeTarget "DeezerSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				249B5D9C14C835B8003ED238 /* Debug */,
+				249B5D9D14C835B8003ED238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 249B5D5014C835B8003ED238 /* Project object */;
+}

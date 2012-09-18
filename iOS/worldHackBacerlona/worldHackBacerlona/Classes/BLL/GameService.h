@@ -8,22 +8,26 @@
 
 #import "AFHTTPClient.h"
 
+@class SongInfoEntity;
+
 typedef void (^SuccessCallback)(id data);
 typedef void (^ErrorCallback)(NSError *error);
 
-@interface GameService : AFHTTPClient
+@interface GameService : NSObject
 
 @property (nonatomic, retain) NSArray *questions;
-
-+ (void)loginWithAccessToken:(NSString *)accessToken
-                     success:(SuccessCallback)success
-                       error:(ErrorCallback)error;
 
 + (void)getQuestionsAndAnswersWithSuccess:(SuccessCallback)success
                                     error:(ErrorCallback)error;
 
++ (void)getDeezerPreviewForSongInfo:(SongInfoEntity *)songInfo
+                            success:(SuccessCallback)success
+                              error:(ErrorCallback)error;
 
 //
 + (void)getUserStatsWithSuccess:(SuccessCallback)success
                           error:(ErrorCallback)error;
+
++ (NSArray*)questions;
+
 @end

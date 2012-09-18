@@ -10,14 +10,27 @@
 
 @interface GameVC : UIViewController<UITableViewDelegate,UITableViewDataSource>{
     UITableView     *myTableView;
-    NSMutableArray  *list;
+    NSArray  *list;
     
     int             step;
+    int             totalSteps;
+    
+    UILabel         *labelWins;
+    UILabel         *labelLost;
+
+    int wins;
+    int lose;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView      *myTableView;
-@property (nonatomic, retain) NSMutableArray            *list;
+@property (nonatomic, retain) NSArray                   *list;
 
 @property (nonatomic, assign) int                       step;
+@property (nonatomic, assign) int                       totalSteps;
 
+@property (nonatomic, retain) IBOutlet UILabel         *labelWins;
+@property (nonatomic, retain) IBOutlet UILabel         *labelLost;
+
+@property (nonatomic, assign) int wins;
+@property (nonatomic, assign) int lose;
 @end
