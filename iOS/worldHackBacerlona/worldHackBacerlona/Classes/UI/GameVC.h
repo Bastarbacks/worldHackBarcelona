@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GameVC : UIViewController
+@interface GameVC : UIViewController<UITableViewDelegate,UITableViewDataSource>{
+    UITableView     *myTableView;
+    NSMutableArray  *list;
+}
+
+@property (nonatomic, retain) IBOutlet UITableView      *myTableView;
+@property (nonatomic, retain) NSMutableArray            *list;
 
 @end
