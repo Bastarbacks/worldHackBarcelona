@@ -70,6 +70,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+    [facebook extendAccessTokenIfNeeded];
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
@@ -190,7 +191,7 @@
     }
     if (![facebook isSessionValid]) {
         NSArray *permissions = [[NSArray alloc] initWithObjects:
-                                @"publish_stream",
+                                @"publish_stream", @"user_actions.music",
                                 //@"email",
                                 nil];
         [facebook authorize:permissions];
@@ -229,6 +230,7 @@
 }
 
 #pragma mark - FBSessionDelegate Methods
+
 - (void)fbDidLogin {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];

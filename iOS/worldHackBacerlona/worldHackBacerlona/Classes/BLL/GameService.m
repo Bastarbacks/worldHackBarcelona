@@ -45,7 +45,7 @@
 + (void)getQuestionsAndAnswersWithSuccess:(SuccessCallback)successCallback
                                     error:(ErrorCallback)errorCallback
 {
-    NSDictionary *parameters = [NSDictionary dictionaryWithObject:[self instance].accessToken forKey:@"accessToken"];
+    NSDictionary *parameters = [NSDictionary dictionaryWithObject:[self instance].accessToken forKey:@"access_token"];
     NSMutableURLRequest *request = [[self instance].game requestWithMethod:@"GET" path:@"play" parameters:parameters];
     
     AFHTTPRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSURLResponse *response, id JSON) {
