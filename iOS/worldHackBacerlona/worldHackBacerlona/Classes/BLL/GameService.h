@@ -6,14 +6,22 @@
 //  Copyright (c) 2012 Bastarbuks. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "AFHTTPClient.h"
 
-@interface GameService : NSObject
+typedef void (^SuccessCallback)(id data);
+typedef void (^ErrorCallback)(NSError *error);
 
-+ (void)loginWithAccessToken:(NSString *)accessToken;
+@interface GameService : AFHTTPClient
 
-+ (void)getUserStats;
++ (void)loginWithAccessToken:(NSString *)accessToken
+                     success:(SuccessCallback)success
+                       error:(ErrorCallback)error;
 
-+ (void)getQuestionsAndAnswers;
++ (void)getQuestionsAndAnswersWithSuccess:(SuccessCallback)success
+                                    error:(ErrorCallback)error;
 
+
+//
++ (void)getUserStatsWithSuccess:(SuccessCallback)success
+                          error:(ErrorCallback)error;
 @end
