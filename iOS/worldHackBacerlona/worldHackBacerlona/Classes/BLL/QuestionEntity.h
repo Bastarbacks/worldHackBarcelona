@@ -9,17 +9,20 @@
 #import <Foundation/Foundation.h>
 
 @class AnswerEntity;
+@class SongInfoEntity;
 
 @interface QuestionEntity : NSObject
 
 @property (nonatomic, retain) NSString *title;
 @property (nonatomic, assign) NSUInteger correctAnswerIndex;
 @property (nonatomic, retain) NSArray *answers;
+@property (nonatomic, retain) SongInfoEntity *songInfo;
 
 @property (nonatomic, assign) AnswerEntity *correctAnswer;
 
 - (id)initWithTitle:(NSString *)title
             answers:(NSArray *)answers
-      correctAnswer:(NSUInteger)correctAnswerIndex;
+      correctAnswer:(NSUInteger)correctAnswerIndex
+           songInfo:(SongInfoEntity *)songInfo;
 
 @end
