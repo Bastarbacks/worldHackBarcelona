@@ -26,4 +26,7 @@ typedef void (^ErrorCallback)(NSError *error);
 //
 + (void)getUserStatsWithSuccess:(SuccessCallback)success
                           error:(ErrorCallback)error;
+
++ (NSArray*)questions;
+
 @end

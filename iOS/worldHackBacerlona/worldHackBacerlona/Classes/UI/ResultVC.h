@@ -10,4 +10,6 @@
 
 @interface ResultVC : UIViewController
 
+
+-(IBAction)goStart:(id)sender;
 @end

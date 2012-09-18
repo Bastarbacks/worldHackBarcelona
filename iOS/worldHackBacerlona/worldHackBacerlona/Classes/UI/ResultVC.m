@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.navigationController.navigationBar setHidden:YES];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -39,6 +41,10 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(IBAction)goStart:(id)sender{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end

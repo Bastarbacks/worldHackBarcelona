@@ -85,6 +85,8 @@
                                                                    correctAnswer:correctAnswer
                                                                         songInfo:songInfo];
                 [array addObject:question];
+                [array addObject:question];//todoooo
+                [array addObject:question];
                 [question release];
             }
             [self instance].questions = array;
@@ -133,5 +135,11 @@
     NSString *accessToken = [appDelegate facebook].accessToken;
     return accessToken;
 }
+
++ (NSArray*)questions{
+    return [self instance].questions;
+}
+
+
 
 @end

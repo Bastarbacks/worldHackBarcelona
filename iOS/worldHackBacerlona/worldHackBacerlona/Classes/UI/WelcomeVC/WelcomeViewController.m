@@ -44,6 +44,11 @@
     }
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+        [self.navigationController.navigationBar setHidden:NO];
+}
+
 -(void)makeLogout:(id)sender{
     AppDelegate *delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     [delegate.facebook logout];
