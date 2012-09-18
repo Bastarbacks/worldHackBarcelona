@@ -68,9 +68,16 @@
 
 #pragma mark - action
 
--(IBAction)start:(id)sender{
-    GameVC * vc = [[[GameVC alloc] initWithNibName:@"GameVC" bundle:nil] autorelease];
-    [self.navigationController pushViewController:vc animated:YES];
+-(IBAction)start:(id)sender
+{
+    [GameService getQuestionsAndAnswersWithSuccess:^(id data) {
+ 
+        GameVC * vc = [[[GameVC alloc] initWithNibName:@"GameVC" bundle:nil] autorelease];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    } error:^(NSError *error) {
+        NSLog(@"error");
+    }];
 }
 
 @end
