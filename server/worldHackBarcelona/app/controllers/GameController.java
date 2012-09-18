@@ -2,7 +2,9 @@ package controllers;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 import models.ParseSongException;
 import models.Question;
@@ -23,9 +25,9 @@ public class GameController extends Controller {
 
     // private static final String ACCESS_TOKEN_TEST =
     // "AAAFk6jZAg8FYBAIVehSSy2tDbKuieUa1sURQypZBTgPa0xOEQVwZAsxegOfJB7kTJkZAuneZAIerJX2MzWHZBlZBZA2DLKADZBVDTZCfNAyJZBUloFeHWg7bLIS";
-    private static final String ACCESS_TOKEN_TEST  = "BAAFk6jZAg8FYBAJwGvZAqTAll4T1rtpBaFqZA6hYn8qB74mIFcKifYgkhohdCJb4j8VZCi0w0H5NREZABCZCNdujtUKZANFtCUmmMWr5Gg5Oe5RZCmbXZCoe5Kx3rd3IGZCnt1JPuVFdQZAVgZDZD";
+    private static final String ACCESS_TOKEN_TEST  = "AAAFk6jZAg8FYBAGm16ZBZAn5NpiJOzp1x1wpfB7aw7YcNlPocDJLeNO4Rv814xbtiKZAvTgKyORADwZAFKLz43xvS45P798kpb2yxNplwxVMaGcLK2pMT";
 
-    private static final int    NUMBER_SONGS_LIMIT = 2;
+    private static final int    NUMBER_SONGS_LIMIT = 10;
 
     public static void play(String access_token) {
 
@@ -38,17 +40,27 @@ public class GameController extends Controller {
         FacebookClient facebookClient = new DefaultFacebookClient(access_token);
 
         List<SimpleSong> allSimpleSongs = fetchUserSongs(facebookClient);
-        Collections.shuffle(allSimpleSongs);
-        List<Song> songs = fetchSongsInfo(facebookClient, allSimpleSongs, NUMBER_SONGS_LIMIT);
 
-        List<Question> questions = generateQuestions(allSimpleSongs, songs);
+        if (allSimpleSongs == null || allSimpleSongs.size() == 0) {
 
-        Logger.info("questions -> %s", questions);
+            Logger.info("user without songs!");
 
-        // User user = facebookClient.fetchObject("me", User.class);
-        // Logger.info("user -> %s", user);
+            renderTestGame();
+        }
+        else {
 
-        render(questions);
+            Collections.shuffle(allSimpleSongs);
+            List<Song> songs = fetchSongsInfo(facebookClient, allSimpleSongs, NUMBER_SONGS_LIMIT);
+
+            List<Question> questions = generateQuestions(allSimpleSongs, songs);
+
+            Logger.info("questions -> %s", questions);
+
+            // User user = facebookClient.fetchObject("me", User.class);
+            // Logger.info("user -> %s", user);
+
+            render(questions);
+        }
     }
 
     private static List<Question> generateQuestions(List<SimpleSong> allSimpleSongs, List<Song> songs) {
@@ -73,16 +85,9 @@ public class GameController extends Controller {
 
         JsonArray musicJsonArray = musicsConnection.getJsonArray("data");
 
-        String musicId = "";
         SimpleSong song = null;
         for (int idx = 0; idx < musicJsonArray.length(); idx++) {
             JsonObject musicSimpleObjectJson = musicJsonArray.getJsonObject(idx).getJsonObject("data").getJsonObject("song");
-
-            // Logger.info("musicSimpleObjectJson -> %s", musicSimpleObjectJson);
-
-            musicId = musicSimpleObjectJson.getString("id");
-
-            // Logger.info("music id -> %s", musicId);
 
             song = new SimpleSong(musicSimpleObjectJson);
 
@@ -125,4 +130,15 @@ public class GameController extends Controller {
         return songs;
     }
 
+    private static void renderTestGame() {
+
+        int numberOfGameTests = 4;
+
+        long seed = new Date().getTime();
+        Random rnd = new Random(seed);
+
+        int gameTest = rnd.nextInt(numberOfGameTests);
+
+        render(String.format("testGames/test_game_%d.json", gameTest));
+    }
 }

@@ -1,0 +1,204 @@
+{
+    "questions": [
+ 
+        {
+            "title": "Qué canción es del artista 'Amatria'",
+            "correctAnswer": 3,
+            "answers": [
+                {
+                    "answer": "07:45 (Bring me back home)"
+                },                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "Caballo de Troya 25"
+                },                {
+                    "answer": "Cara De Monstruito"
+                }            ],
+            "songInfo": {
+                "title": "Cara De Monstruito",
+                "artist": "Amatria",
+                "album": "Hoy van a salirte las alas",
+                "cover": "http://o.scdn.co/thumb/750ebe128d44c0b8e003fe080d05a18242125c53"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Petti'",
+            "correctAnswer": 1,
+            "answers": [
+                {
+                    "answer": "Cine Azteca"
+                },                {
+                    "answer": "Hauskorrak"
+                },                {
+                    "answer": "The Waltz of the Tick Tock of Time"
+                },                {
+                    "answer": "Blood Like Lemonade"
+                }            ],
+            "songInfo": {
+                "title": "Hauskorrak",
+                "artist": "Petti",
+                "album": "On",
+                "cover": "http://o.scdn.co/thumb/c18a3933b206fd169798d2acf3266fb7a5345718"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'We Are Standard'",
+            "correctAnswer": 1,
+            "answers": [
+                {
+                    "answer": "Cine Azteca"
+                },                {
+                    "answer": "07:45 (Bring me back home)"
+                },                {
+                    "answer": "The Waltz of the Tick Tock of Time"
+                },                {
+                    "answer": "Blood Like Lemonade"
+                }            ],
+            "songInfo": {
+                "title": "07:45 (Bring me back home)",
+                "artist": "We Are Standard",
+                "album": "Great State",
+                "cover": "http://o.scdn.co/thumb/afc319e89e81c048d89f2427d859634ebefe20d6"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Jonston'",
+            "correctAnswer": 1,
+            "answers": [
+                {
+                    "answer": "Cine Azteca"
+                },                {
+                    "answer": "Caballo de Troya 25"
+                },                {
+                    "answer": "The Waltz of the Tick Tock of Time"
+                },                {
+                    "answer": "Blood Like Lemonade"
+                }            ],
+            "songInfo": {
+                "title": "Caballo de Troya 25",
+                "artist": "Jonston",
+                "album": "Veo Visones",
+                "cover": "http://o.scdn.co/thumb/2cdd496cf44d50371ae79c0460db537382cc1c2c"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'El Puchero Del Hortelano'",
+            "correctAnswer": 2,
+            "answers": [
+                {
+                    "answer": "The Waltz of the Tick Tock of Time"
+                },                {
+                    "answer": "Cara De Monstruito"
+                },                {
+                    "answer": "Ave Fénix"
+                },                {
+                    "answer": "Por La Mar Chica Del Puerto"
+                }            ],
+            "songInfo": {
+                "title": "Ave Fénix",
+                "artist": "El Puchero Del Hortelano",
+                "album": "El tiempo de Manuel",
+                "cover": "http://o.scdn.co/thumb/0fe6fcaa1aefaa52ed9202e50ec59b6d96ced4e6"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Ted Leo and the Pharmacists'",
+            "correctAnswer": 2,
+            "answers": [
+                {
+                    "answer": "The Waltz of the Tick Tock of Time"
+                },                {
+                    "answer": "Cara De Monstruito"
+                },                {
+                    "answer": "Bottled In Cork"
+                },                {
+                    "answer": "Por La Mar Chica Del Puerto"
+                }            ],
+            "songInfo": {
+                "title": "Bottled In Cork",
+                "artist": "Ted Leo and the Pharmacists",
+                "album": "The Brutalist Bricks",
+                "cover": "http://o.scdn.co/thumb/6ae9c1dd0a1a7ba0e0758389bf39a8e2e1310a1f"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Maia Vidal'",
+            "correctAnswer": 2,
+            "answers": [
+                {
+                    "answer": "Cara De Monstruito"
+                },                {
+                    "answer": "Por La Mar Chica Del Puerto"
+                },                {
+                    "answer": "The Waltz of the Tick Tock of Time"
+                },                {
+                    "answer": "Ave Fénix"
+                }            ],
+            "songInfo": {
+                "title": "The Waltz of the Tick Tock of Time",
+                "artist": "Maia Vidal",
+                "album": "God Is My Bike",
+                "cover": "http://o.scdn.co/thumb/3ca78890b0c8cf4a72fb490a87977e06222d5407"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Amatria'",
+            "correctAnswer": 2,
+            "answers": [
+                {
+                    "answer": "Crimson"
+                },                {
+                    "answer": "De Paso"
+                },                {
+                    "answer": "Cara De Monstruito"
+                },                {
+                    "answer": "La noche eterna"
+                }            ],
+            "songInfo": {
+                "title": "Cara De Monstruito",
+                "artist": "Amatria",
+                "album": "Hoy van a salirte las alas",
+                "cover": "http://o.scdn.co/thumb/750ebe128d44c0b8e003fe080d05a18242125c53"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Mayte Martin'",
+            "correctAnswer": 2,
+            "answers": [
+                {
+                    "answer": "Crimson"
+                },                {
+                    "answer": "De Paso"
+                },                {
+                    "answer": "Por La Mar Chica Del Puerto"
+                },                {
+                    "answer": "La noche eterna"
+                }            ],
+            "songInfo": {
+                "title": "Por La Mar Chica Del Puerto",
+                "artist": "Mayte Martin",
+                "album": "Al Cantar A Manuel",
+                "cover": "http://o.scdn.co/thumb/3fdef9778335388d5038e6d90c0828bcfb3bcf1a"
+            }
+        }, 
+        {
+            "title": "Qué canción es del artista 'Maria Rodés'",
+            "correctAnswer": 2,
+            "answers": [
+                {
+                    "answer": "Crimson"
+                },                {
+                    "answer": "De Paso"
+                },                {
+                    "answer": "Te Vi"
+                },                {
+                    "answer": "La noche eterna"
+                }            ],
+            "songInfo": {
+                "title": "Te Vi",
+                "artist": "Maria Rodés",
+                "album": "Sueño Triangular",
+                "cover": "http://o.scdn.co/thumb/95bbb429af1ba65122f59833c68bb675e4b296eb"
+            }
+        }    ]
+}
