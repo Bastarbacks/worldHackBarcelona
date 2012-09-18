@@ -5,14 +5,15 @@ import play.Logger;
 import com.restfb.json.JsonArray;
 import com.restfb.json.JsonObject;
 
-public class Song {
+public class Song extends SimpleSong {
 
-    private final String title;
     private final String artist;
     private final String album;
     private final String cover;
 
     public Song(JsonObject musicObjectJson) throws ParseSongException {
+
+        super(musicObjectJson);
 
         Logger.info("musicObjectJson -> %s", musicObjectJson);
 
@@ -23,7 +24,6 @@ public class Song {
 
         JsonObject musicData = musicObjectJson.getJsonObject("data");
 
-        title = musicObjectJson.getString("title");
         JsonArray images = musicObjectJson.getJsonArray("image");
         if (images != null && images.length() > 0) {
             cover = images.getJsonObject(0).getString("url");
@@ -47,12 +47,20 @@ public class Song {
         }
     }
 
-    @Override
-    public String toString() {
-        return "Song [title=" + title + ", artist=" + artist + ", album=" + album + ", cover=" + cover + "]";
+    public String getArtist() {
+        return artist;
     }
 
-    public class ParseSongException extends Throwable {
+    public String getAlbum() {
+        return album;
+    }
 
+    public String getCover() {
+        return cover;
+    }
+
+    @Override
+    public String toString() {
+        return "Song [id=" + id + ", title=" + title + ", artist=" + artist + ", album=" + album + ", cover=" + cover + "]";
     }
 }
