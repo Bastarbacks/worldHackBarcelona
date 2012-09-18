@@ -1,10 +1,13 @@
 package controllers;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
+import models.ParseSongException;
+import models.Question;
+import models.SimpleSong;
 import models.Song;
-import models.Song.ParseSongException;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -30,41 +33,87 @@ public class GameController extends Controller {
 
         Logger.info("access_token -> %s", access_token);
 
-        List<Song> songs = fetchUserSongs(access_token, NUMBER_SONGS_LIMIT);
+        FacebookClient facebookClient = new DefaultFacebookClient(access_token);
+
+        List<SimpleSong> allSimpleSongs = fetchUserSongs(facebookClient);
+        Collections.shuffle(allSimpleSongs);
+        List<Song> songs = fetchSongsInfo(facebookClient, allSimpleSongs, NUMBER_SONGS_LIMIT);
+
+        List<Question> questions = generateQuestions(allSimpleSongs, songs);
+
+        Logger.info("questions -> %s", questions);
 
         // User user = facebookClient.fetchObject("me", User.class);
         // Logger.info("user -> %s", user);
 
-        render();
+        render(questions);
     }
 
-    private static List<Song> fetchUserSongs(String accessToken, int limit) {
+    private static List<Question> generateQuestions(List<SimpleSong> allSimpleSongs, List<Song> songs) {
 
-        List<Song> songs = new ArrayList<Song>();
+        List<Question> questions = new ArrayList<Question>();
 
-        FacebookClient facebookClient = new DefaultFacebookClient(accessToken);
+        for (Song song : songs) {
+
+            Question question = Question.newQuestion(song, allSimpleSongs);
+
+            questions.add(question);
+        }
+
+        return questions;
+    }
+
+    private static List<SimpleSong> fetchUserSongs(FacebookClient facebookClient) {
+
+        List<SimpleSong> allSongs = new ArrayList<SimpleSong>();
 
         JsonObject musicsConnection = facebookClient.fetchObject("me/music.listens", JsonObject.class);
 
         JsonArray musicJsonArray = musicsConnection.getJsonArray("data");
 
         String musicId = "";
-        Song song = null;
-        for (int idx = 0; idx < musicJsonArray.length() && idx < limit; idx++) {
+        SimpleSong song = null;
+        for (int idx = 0; idx < musicJsonArray.length(); idx++) {
             JsonObject musicSimpleObjectJson = musicJsonArray.getJsonObject(idx).getJsonObject("data").getJsonObject("song");
 
-            Logger.info("musicSimpleObjectJson -> %s", musicSimpleObjectJson);
+            // Logger.info("musicSimpleObjectJson -> %s", musicSimpleObjectJson);
 
             musicId = musicSimpleObjectJson.getString("id");
 
-            Logger.info("music id -> %s", musicId);
+            // Logger.info("music id -> %s", musicId);
+
+            song = new SimpleSong(musicSimpleObjectJson);
+
+            allSongs.add(song);
+        }
+
+        return allSongs;
+    }
+
+    private static List<Song> fetchSongsInfo(FacebookClient facebookClient, List<SimpleSong> simpleSongs, int limit) {
+
+        List<Song> songs = new ArrayList<Song>();
+
+        String musicId = "";
+        Song song = null;
+        for (int idx = 0; idx < simpleSongs.size() && idx < limit; idx++) {
+
+            SimpleSong simpleSong = simpleSongs.get(idx);
+
+            musicId = simpleSong.getId();
+
+            if (StringUtils.isEmpty(musicId)) {
+                continue;
+            }
+
+            // Logger.info("music id -> %s", musicId);
 
             JsonObject musicCompleteInfoJson = facebookClient.fetchObject(musicId, JsonObject.class);
 
             try {
                 song = new Song(musicCompleteInfoJson);
                 songs.add(song);
-                Logger.info("song -> %s", song);
+                // Logger.info("song -> %s", song);
             }
             catch (ParseSongException e) {
                 e.printStackTrace();
