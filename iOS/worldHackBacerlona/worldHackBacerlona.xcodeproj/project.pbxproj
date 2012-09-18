@@ -19,6 +19,7 @@
 		360F5CCD1608A7F30044F43B /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 360F5C911608A7F30044F43B /* UIImageView+AFNetworking.m */; };
 		360F5D181608AF500044F43B /* QuestionEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 360F5D171608AF500044F43B /* QuestionEntity.m */; };
 		360F5D1B1608AF5E0044F43B /* AnswerEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 360F5D1A1608AF5E0044F43B /* AnswerEntity.m */; };
+		360F5D321608B7F70044F43B /* SongInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 360F5D311608B7F60044F43B /* SongInfoEntity.m */; };
 		361B6347160898BC00D6A88D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361B6346160898BC00D6A88D /* UIKit.framework */; };
 		361B6349160898BC00D6A88D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361B6348160898BC00D6A88D /* Foundation.framework */; };
 		361B634B160898BC00D6A88D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361B634A160898BC00D6A88D /* CoreGraphics.framework */; };
@@ -86,6 +87,8 @@
 		360F5D171608AF500044F43B /* QuestionEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionEntity.m; path = Classes/BLL/QuestionEntity.m; sourceTree = "<group>"; };
 		360F5D191608AF5E0044F43B /* AnswerEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerEntity.h; sourceTree = "<group>"; };
 		360F5D1A1608AF5E0044F43B /* AnswerEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerEntity.m; sourceTree = "<group>"; };
+		360F5D301608B7F60044F43B /* SongInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SongInfoEntity.h; path = Classes/BLL/SongInfoEntity.h; sourceTree = "<group>"; };
+		360F5D311608B7F60044F43B /* SongInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SongInfoEntity.m; path = Classes/BLL/SongInfoEntity.m; sourceTree = "<group>"; };
 		361B6342160898BC00D6A88D /* worldHackBacerlona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = worldHackBacerlona.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		361B6346160898BC00D6A88D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		361B6348160898BC00D6A88D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -279,6 +282,8 @@
 				360F5D171608AF500044F43B /* QuestionEntity.m */,
 				360F5D191608AF5E0044F43B /* AnswerEntity.h */,
 				360F5D1A1608AF5E0044F43B /* AnswerEntity.m */,
+				360F5D301608B7F60044F43B /* SongInfoEntity.h */,
+				360F5D311608B7F60044F43B /* SongInfoEntity.m */,
 			);
 			name = BLL;
 			sourceTree = "<group>";
@@ -475,6 +480,7 @@
 				360F5CCD1608A7F30044F43B /* UIImageView+AFNetworking.m in Sources */,
 				360F5D181608AF500044F43B /* QuestionEntity.m in Sources */,
 				360F5D1B1608AF5E0044F43B /* AnswerEntity.m in Sources */,
+				360F5D321608B7F70044F43B /* SongInfoEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
