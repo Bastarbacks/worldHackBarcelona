@@ -21,6 +21,7 @@
 		361B636E16089F6E00D6A88D /* GameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361B636C16089F6E00D6A88D /* GameVC.xib */; };
 		361B637216089F7E00D6A88D /* ResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 361B637016089F7E00D6A88D /* ResultVC.m */; };
 		361B637316089F7E00D6A88D /* ResultVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361B637116089F7E00D6A88D /* ResultVC.xib */; };
+		361B637616089FB900D6A88D /* GameService.m in Sources */ = {isa = PBXBuildFile; fileRef = 361B637516089FB900D6A88D /* GameService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		361B636F16089F7E00D6A88D /* ResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultVC.h; path = Classes/UI/ResultVC.h; sourceTree = "<group>"; };
 		361B637016089F7E00D6A88D /* ResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultVC.m; path = Classes/UI/ResultVC.m; sourceTree = "<group>"; };
 		361B637116089F7E00D6A88D /* ResultVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResultVC.xib; path = Classes/UI/ResultVC.xib; sourceTree = "<group>"; };
+		361B637416089FB900D6A88D /* GameService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameService.h; path = Classes/BLL/GameService.h; sourceTree = "<group>"; };
+		361B637516089FB900D6A88D /* GameService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameService.m; path = Classes/BLL/GameService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 		361B636416089F1600D6A88D /* BLL */ = {
 			isa = PBXGroup;
 			children = (
+				361B637416089FB900D6A88D /* GameService.h */,
+				361B637516089FB900D6A88D /* GameService.m */,
 			);
 			name = BLL;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				361B636816089F3E00D6A88D /* LoginVC.m in Sources */,
 				361B636D16089F6E00D6A88D /* GameVC.m in Sources */,
 				361B637216089F7E00D6A88D /* ResultVC.m in Sources */,
+				361B637616089FB900D6A88D /* GameService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
