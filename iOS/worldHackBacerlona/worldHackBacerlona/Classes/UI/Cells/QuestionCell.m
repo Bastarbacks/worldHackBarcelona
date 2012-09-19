@@ -1,6 +1,6 @@
 //
 //  QuestionCell.m
-//  worldHackBacerlona
+//  worldHackBarcelona
 //
 //  Created by Valenti on 18/09/12.
 //  Copyright (c) 2012 Bastarbuks. All rights reserved.
