@@ -99,15 +99,15 @@
 		360F5D1A1608AF5E0044F43B /* AnswerEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerEntity.m; sourceTree = "<group>"; };
 		360F5D301608B7F60044F43B /* SongInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SongInfoEntity.h; path = Classes/BLL/SongInfoEntity.h; sourceTree = "<group>"; };
 		360F5D311608B7F60044F43B /* SongInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SongInfoEntity.m; path = Classes/BLL/SongInfoEntity.m; sourceTree = "<group>"; };
-		361B6342160898BC00D6A88D /* worldHackBacerlona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = worldHackBacerlona.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		361B6342160898BC00D6A88D /* worldHackBarcelona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = worldHackBarcelona.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		361B6346160898BC00D6A88D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		361B6348160898BC00D6A88D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		361B634A160898BC00D6A88D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		361B634C160898BC00D6A88D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		361B6350160898BC00D6A88D /* worldHackBacerlona-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "worldHackBacerlona-Info.plist"; sourceTree = "<group>"; };
+		361B6350160898BC00D6A88D /* worldHackBarcelona-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "worldHackBarcelona-Info.plist"; sourceTree = "<group>"; };
 		361B6352160898BC00D6A88D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		361B6354160898BC00D6A88D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		361B6356160898BC00D6A88D /* worldHackBacerlona-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "worldHackBacerlona-Prefix.pch"; sourceTree = "<group>"; };
+		361B6356160898BC00D6A88D /* worldHackBarcelona-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "worldHackBarcelona-Prefix.pch"; sourceTree = "<group>"; };
 		361B6357160898BC00D6A88D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		361B6358160898BC00D6A88D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		361B635B160898BC00D6A88D /* worldHackBacerlona.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = worldHackBacerlona.xcdatamodel; sourceTree = "<group>"; };
@@ -233,7 +233,7 @@
 		361B6343160898BC00D6A88D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				361B6342160898BC00D6A88D /* worldHackBacerlona.app */,
+				361B6342160898BC00D6A88D /* worldHackBarcelona.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,10 +265,10 @@
 		361B634F160898BC00D6A88D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				361B6350160898BC00D6A88D /* worldHackBacerlona-Info.plist */,
+				361B6350160898BC00D6A88D /* worldHackBarcelona-Info.plist */,
 				361B6351160898BC00D6A88D /* InfoPlist.strings */,
 				361B6354160898BC00D6A88D /* main.m */,
-				361B6356160898BC00D6A88D /* worldHackBacerlona-Prefix.pch */,
+				361B6356160898BC00D6A88D /* worldHackBarcelona-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -437,9 +437,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		361B6341160898BC00D6A88D /* worldHackBacerlona */ = {
+		361B6341160898BC00D6A88D /* worldHackBarcelona */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 361B635F160898BC00D6A88D /* Build configuration list for PBXNativeTarget "worldHackBacerlona" */;
+			buildConfigurationList = 361B635F160898BC00D6A88D /* Build configuration list for PBXNativeTarget "worldHackBarcelona" */;
 			buildPhases = (
 				361B633E160898BC00D6A88D /* Sources */,
 				361B633F160898BC00D6A88D /* Frameworks */,
@@ -449,9 +449,9 @@
 			);
 			dependencies = (
 			);
-			name = worldHackBacerlona;
+			name = worldHackBarcelona;
 			productName = worldHackBacerlona;
-			productReference = 361B6342160898BC00D6A88D /* worldHackBacerlona.app */;
+			productReference = 361B6342160898BC00D6A88D /* worldHackBarcelona.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -463,7 +463,7 @@
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = Bastarbuks;
 			};
-			buildConfigurationList = 361B633C160898BC00D6A88D /* Build configuration list for PBXProject "worldHackBacerlona" */;
+			buildConfigurationList = 361B633C160898BC00D6A88D /* Build configuration list for PBXProject "worldHackBarcelona" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -481,7 +481,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				361B6341160898BC00D6A88D /* worldHackBacerlona */,
+				361B6341160898BC00D6A88D /* worldHackBarcelona */,
 			);
 		};
 /* End PBXProject section */
@@ -625,14 +625,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "worldHackBacerlona/worldHackBacerlona-Prefix.pch";
-				INFOPLIST_FILE = "worldHackBacerlona/worldHackBacerlona-Info.plist";
+				GCC_PREFIX_HEADER = "worldHackBacerlona/worldHackBarcelona-Prefix.pch";
+				INFOPLIST_FILE = "worldHackBacerlona/worldHackBarcelona-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/worldHackBacerlona/Classes/BLL/Libs/deezer-ios-sdk-0.7.1/deezer-ios-0.7.1\"",
 					"\"$(SRCROOT)/worldHackBacerlona/Classes/BLL/Libs/deezer-ios-sdk-0.7.1/sample/DeezerSample/DeezerSample/LibDeezer\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = worldHackBarcelona;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -641,14 +641,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "worldHackBacerlona/worldHackBacerlona-Prefix.pch";
-				INFOPLIST_FILE = "worldHackBacerlona/worldHackBacerlona-Info.plist";
+				GCC_PREFIX_HEADER = "worldHackBacerlona/worldHackBarcelona-Prefix.pch";
+				INFOPLIST_FILE = "worldHackBacerlona/worldHackBarcelona-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/worldHackBacerlona/Classes/BLL/Libs/deezer-ios-sdk-0.7.1/deezer-ios-0.7.1\"",
 					"\"$(SRCROOT)/worldHackBacerlona/Classes/BLL/Libs/deezer-ios-sdk-0.7.1/sample/DeezerSample/DeezerSample/LibDeezer\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = worldHackBarcelona;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -656,7 +656,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		361B633C160898BC00D6A88D /* Build configuration list for PBXProject "worldHackBacerlona" */ = {
+		361B633C160898BC00D6A88D /* Build configuration list for PBXProject "worldHackBarcelona" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				361B635D160898BC00D6A88D /* Debug */,
@@ -665,7 +665,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		361B635F160898BC00D6A88D /* Build configuration list for PBXNativeTarget "worldHackBacerlona" */ = {
+		361B635F160898BC00D6A88D /* Build configuration list for PBXNativeTarget "worldHackBarcelona" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				361B6360160898BC00D6A88D /* Debug */,
